@@ -22,7 +22,7 @@ def check_read(read_int, genomic_array, valid_chroms):
 #		print('Not Valid Chromosome '+read_int.chrom)
 	
 
-def get_counts(inp_file, genomic_array, valid_chroms):
+def get_counts(inp_file, genomic_array, valid_chroms, break_count):
 	ext = inp_file.split('.')[-1]
 	reader_file = ''
 	if(ext == 'bam'):
@@ -49,7 +49,8 @@ def get_counts(inp_file, genomic_array, valid_chroms):
 		if(total_reads%1e4 == 0):
 			print("Finished counting "+ str(int(total_reads/1e4)) )
 			print("So far " + str(float(counts)/total_reads * 100) + " Aligned")
-	print(time.clock() - start_time)
+		if(total_reads == break_count):
+			break
 	print(counts)
 	print(total_reads)
 	return [counts, total_reads]
@@ -78,7 +79,7 @@ def main():
 	
 	genomic_array = pickle.load(open(args.pickle_alpha, "rb"))
 	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
-	count_reads = get_counts(file_work, genomic_array, valid_chroms)
+	count_reads = get_counts(file_work, genomic_array, valid_chroms, 1e5)
 	
 		
 	with open(file_write, 'w') as writ:
