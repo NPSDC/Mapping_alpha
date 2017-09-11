@@ -1,0 +1,63 @@
+******************************Download************************************************
+Given an SRA id download using 
+prefetch SRAID
+**************************************************************************************
+
+*********************************To Fastq*********************************************
+Convert it to fastq using 
+parallel-fastq-dump --sra-id SRR1219899 --threads 4 --outdir out/ --split-3 --gzip
+NOTE to use thread option for speeding up the conversion
+The split-3 argument will automatically take care whether it is single end or paired end
+
+Install parallel-fastq-dump using 
+conda install parallel-fastq-dump
+
+Also parallel-fastq-dump stores the output temporaily in /tmp directory. Please make sure it has enough memory or apply the tmp directory via --tmpdir
+
+Please note that SRAtool kit has to be installed before using any of the above
+***************************************************************************************
+
+***************************Convert to bam or sam***************************************
+Bowtie2 was used for aligning to respective index file
+For aligning
+eg:
+bowtie2  -p 16 -x ../../alpha_new/alpha -1 SRR633614_1.fastq.gz -2 SRR633614_2.fastq.gz | samtools view -bS - > chip_1_alpha_new.bam
+Here p stands for threads argument following -x stands for the index file
+-1 -2 for paired end reads, if single end use -U
+output is a sam which is being converted to a bam
+***************************************************************************************
+
+****************************Pipeline****************************************************
+###Way 1###
+1)All repeat regions were extracted from UCSC Genome Browser from which alpha satellite regions were extracted
+2)The protein fastq files of inerest were aligned with the human genome.
+3)Then python script is based on HTSeq which checks whether the aligned reads falls in the region of alpha satellites mentioned above
+
+To run
+python reader.py --file bam/sam file --p_alr_align gr.pickle --p_valid_chrom valid_chroms.pickle
+
+gr.pickle is the genomic array containing all the alpha satellite regions
+valid_chroms.pickle contains the pickle file containing all chromosomes that existed in the repeat regions file.
+By default the output of the count gets stored in the same directory as that of the bam/sam file. Otherwise you could give the directory where you want to write via 
+--dest file
+
+
+###Way 2### (faster)
+1)Create an index file of all the alpha satellites extracted from repeat regions.
+2)Align the respective fastq file to the alpha satellite index file
+3)Look at the aligned and non aligned regions using
+
+samtools flagstat filename
+*****************************************************************************************
+
+***************************Directory Structure*******************************************
+Under Working
+	index_files - Contains the working index files corresponding to the alpha satellites and the human genome
+	Pickle - contains the pickled objects needed for running reader.py
+	Scripts - Contains all the codes required for the various tasks
+		---get_alpha_sequences.py - Creates the pickled objects. Required input the repeats sequence file with --file tag
+		---reader.py - counts the reads aligned to alpha satellites. All the required inputs mentioned above
+		---get_fasta.sh - creates the fasta file of alpha satellites. Two inputs with the first being the file containing the positions of alpha satellites and 			          second being fasta file corresponding to human genome
+		---calc_mappings.sh - finds the total number of aligned reads for a given bam/sam file
+	Others - other files created using above. 
+
