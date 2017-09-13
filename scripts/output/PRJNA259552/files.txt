@@ -1,0 +1,5 @@
+SRR1559023 ftp.sra.ebi.ac.uk/vol1/fastq/SRR155/003/SRR1559023/SRR1559023.fastq.gz
+SRR1559024 ftp.sra.ebi.ac.uk/vol1/fastq/SRR155/004/SRR1559024/SRR1559024.fastq.gz
+SRR1559025 ftp.sra.ebi.ac.uk/vol1/fastq/SRR155/005/SRR1559025/SRR1559025.fastq.gz
+SRR1559026 ftp.sra.ebi.ac.uk/vol1/fastq/SRR155/006/SRR1559026/SRR1559026.fastq.gz
+SRR1559027 ftp.sra.ebi.ac.uk/vol1/fastq/SRR155/007/SRR1559027/SRR1559027.fastq.gz

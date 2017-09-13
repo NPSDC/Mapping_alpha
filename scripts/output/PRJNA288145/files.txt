@@ -1,0 +1,2 @@
+SRR2078719 ftp.sra.ebi.ac.uk/vol1/fastq/SRR207/009/SRR2078719/SRR2078719.fastq.gz
+SRR2078720 ftp.sra.ebi.ac.uk/vol1/fastq/SRR207/000/SRR2078720/SRR2078720.fastq.gz

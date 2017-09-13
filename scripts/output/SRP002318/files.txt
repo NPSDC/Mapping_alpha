@@ -1,0 +1,1 @@
+SRR040191 ftp.sra.ebi.ac.uk/vol1/fastq/SRR040/SRR040191/SRR040191.fastq.gz

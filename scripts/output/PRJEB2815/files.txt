@@ -1,0 +1,1 @@
+ERR063469 ftp.sra.ebi.ac.uk/vol1/fastq/ERR063/ERR063469/ERR063469.fastq.gz

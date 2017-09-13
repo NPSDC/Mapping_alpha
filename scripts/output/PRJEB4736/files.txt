@@ -1,0 +1,3 @@
+ERR351451 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351451/ERR351451.fastq.gz
+ERR351452 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351452/ERR351452.fastq.gz
+ERR351453 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351453/ERR351453.fastq.gz

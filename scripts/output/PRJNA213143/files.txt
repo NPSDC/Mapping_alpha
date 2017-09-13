@@ -1,0 +1,16 @@
+SRR941936 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941936/SRR941936.fastq.gz
+SRR941937 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941937/SRR941937.fastq.gz
+SRR941938 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941938/SRR941938.fastq.gz
+SRR941939 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941939/SRR941939.fastq.gz
+SRR941940 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941940/SRR941940.fastq.gz
+SRR941941 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941941/SRR941941.fastq.gz
+SRR941942 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941942/SRR941942.fastq.gz
+SRR941943 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941943/SRR941943.fastq.gz
+SRR941944 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941944/SRR941944.fastq.gz
+SRR941945 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941945/SRR941945.fastq.gz
+SRR941946 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941946/SRR941946.fastq.gz
+SRR941947 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941947/SRR941947.fastq.gz
+SRR941948 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941948/SRR941948.fastq.gz
+SRR941949 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941949/SRR941949.fastq.gz
+SRR941950 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941950/SRR941950.fastq.gz
+SRR941951 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941951/SRR941951.fastq.gz

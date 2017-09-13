@@ -1,0 +1,3 @@
+ERR220394 ftp.sra.ebi.ac.uk/vol1/fastq/ERR220/ERR220394/ERR220394.fastq.gz
+ERR220395 ftp.sra.ebi.ac.uk/vol1/fastq/ERR220/ERR220395/ERR220395.fastq.gz
+ERR220396 ftp.sra.ebi.ac.uk/vol1/fastq/ERR220/ERR220396/ERR220396.fastq.gz

@@ -1,0 +1,4 @@
+ERR1655198 ftp.sra.ebi.ac.uk/vol1/fastq/ERR165/008/ERR1655198/ERR1655198.fastq.gz
+ERR1655199 ftp.sra.ebi.ac.uk/vol1/fastq/ERR165/009/ERR1655199/ERR1655199.fastq.gz
+ERR1655200 ftp.sra.ebi.ac.uk/vol1/fastq/ERR165/000/ERR1655200/ERR1655200.fastq.gz
+ERR1655201 ftp.sra.ebi.ac.uk/vol1/fastq/ERR165/001/ERR1655201/ERR1655201.fastq.gz

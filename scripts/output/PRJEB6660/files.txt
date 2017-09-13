@@ -1,0 +1,5 @@
+ERR553893 ftp.sra.ebi.ac.uk/vol1/fastq/ERR553/ERR553893/ERR553893.fastq.gz
+ERR553894 ftp.sra.ebi.ac.uk/vol1/fastq/ERR553/ERR553894/ERR553894.fastq.gz
+ERR553895 ftp.sra.ebi.ac.uk/vol1/fastq/ERR553/ERR553895/ERR553895.fastq.gz
+ERR553896 ftp.sra.ebi.ac.uk/vol1/fastq/ERR553/ERR553896/ERR553896.fastq.gz
+ERR553897 ftp.sra.ebi.ac.uk/vol1/fastq/ERR553/ERR553897/ERR553897.fastq.gz

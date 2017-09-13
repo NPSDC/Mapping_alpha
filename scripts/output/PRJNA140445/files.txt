@@ -1,0 +1,2 @@
+SRR201950 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/SRR201950/SRR201950.fastq.gz
+SRR350216 ftp.sra.ebi.ac.uk/vol1/fastq/SRR350/SRR350216/SRR350216.fastq.gz

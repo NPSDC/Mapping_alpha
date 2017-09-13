@@ -1,0 +1,6 @@
+ERR022276 ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022276/ERR022276.fastq.gz
+ERR022277 ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022277/ERR022277.fastq.gz
+ERR022295 ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022295/ERR022295.fastq.gz
+ERR022300 ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022300/ERR022300.fastq.gz
+ERR022303 ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022303/ERR022303.fastq.gz
+ERR048668 ftp.sra.ebi.ac.uk/vol1/fastq/ERR048/ERR048668/ERR048668.fastq.gz

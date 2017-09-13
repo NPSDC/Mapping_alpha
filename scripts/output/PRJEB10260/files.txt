@@ -1,0 +1,10 @@
+ERR979095 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979095/ERR979095.fastq.gz
+ERR979096 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979096/ERR979096.fastq.gz
+ERR979097 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979097/ERR979097.fastq.gz
+ERR979098 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979098/ERR979098.fastq.gz
+ERR979099 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979099/ERR979099.fastq.gz
+ERR979100 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979100/ERR979100.fastq.gz
+ERR979101 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979101/ERR979101.fastq.gz
+ERR979102 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979102/ERR979102.fastq.gz
+ERR979103 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979103/ERR979103.fastq.gz
+ERR979104 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979104/ERR979104.fastq.gz

@@ -1,0 +1,8 @@
+ERR674416 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674416/ERR674416.fastq.gz
+ERR674417 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674417/ERR674417.fastq.gz
+ERR674418 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674418/ERR674418.fastq.gz
+ERR674420 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674420/ERR674420.fastq.gz
+ERR674421 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674421/ERR674421.fastq.gz
+ERR674423 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674423/ERR674423.fastq.gz
+ERR674426 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674426/ERR674426.fastq.gz
+ERR674427 ftp.sra.ebi.ac.uk/vol1/fastq/ERR674/ERR674427/ERR674427.fastq.gz

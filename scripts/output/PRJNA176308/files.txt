@@ -1,0 +1,1 @@
+SRR578184 ftp.sra.ebi.ac.uk/vol1/fastq/SRR578/SRR578184/SRR578184.fastq.gz

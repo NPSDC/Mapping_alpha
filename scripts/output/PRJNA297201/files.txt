@@ -1,0 +1,5 @@
+SRR2532027 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/007/SRR2532027/SRR2532027.fastq.gz
+SRR2532028 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/008/SRR2532028/SRR2532028.fastq.gz
+SRR2532029 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/009/SRR2532029/SRR2532029.fastq.gz
+SRR2532030 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/000/SRR2532030/SRR2532030.fastq.gz
+SRR2532031 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/001/SRR2532031/SRR2532031.fastq.gz

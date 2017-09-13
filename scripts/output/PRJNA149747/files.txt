@@ -1,0 +1,13 @@
+SRR388211 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388211/SRR388211.fastq.gz
+SRR388212 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388212/SRR388212.fastq.gz
+SRR388213 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388213/SRR388213.fastq.gz
+SRR388214 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388214/SRR388214.fastq.gz
+SRR388215 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388215/SRR388215.fastq.gz
+SRR388216 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388216/SRR388216.fastq.gz
+SRR388217 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388217/SRR388217.fastq.gz
+SRR388218 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388218/SRR388218.fastq.gz
+SRR388219 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388219/SRR388219.fastq.gz
+SRR388220 ftp.sra.ebi.ac.uk/vol1/fastq/SRR388/SRR388220/SRR388220.fastq.gz
+SRR496200 ftp.sra.ebi.ac.uk/vol1/fastq/SRR496/SRR496200/SRR496200.fastq.gz
+SRR496201 ftp.sra.ebi.ac.uk/vol1/fastq/SRR496/SRR496201/SRR496201.fastq.gz
+SRR496202 ftp.sra.ebi.ac.uk/vol1/fastq/SRR496/SRR496202/SRR496202.fastq.gz

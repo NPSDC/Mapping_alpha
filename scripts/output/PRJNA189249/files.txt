@@ -1,0 +1,1 @@
+SRR701519 ftp.sra.ebi.ac.uk/vol1/fastq/SRR701/SRR701519/SRR701519.fastq.gz

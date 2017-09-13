@@ -1,0 +1,6 @@
+ERR1341913 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/003/ERR1341913/ERR1341913.fastq.gz
+ERR1341914 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/004/ERR1341914/ERR1341914.fastq.gz
+ERR1341915 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/005/ERR1341915/ERR1341915.fastq.gz
+ERR1341916 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/006/ERR1341916/ERR1341916.fastq.gz
+ERR1341917 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/007/ERR1341917/ERR1341917.fastq.gz
+ERR1341918 ftp.sra.ebi.ac.uk/vol1/fastq/ERR134/008/ERR1341918/ERR1341918.fastq.gz

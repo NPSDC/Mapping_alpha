@@ -1,0 +1,1 @@
+SRR1141715 ftp.sra.ebi.ac.uk/vol1/fastq/SRR114/005/SRR1141715/SRR1141715.fastq.gz

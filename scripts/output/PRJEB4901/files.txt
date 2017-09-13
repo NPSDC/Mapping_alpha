@@ -1,0 +1,1 @@
+ERR361904 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361904/ERR361904.fastq.gz

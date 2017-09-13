@@ -1,0 +1,15 @@
+SRR1561001 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/001/SRR1561001/SRR1561001.fastq.gz
+SRR1561002 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/002/SRR1561002/SRR1561002.fastq.gz
+SRR1561003 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/003/SRR1561003/SRR1561003.fastq.gz
+SRR1561004 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/004/SRR1561004/SRR1561004.fastq.gz
+SRR1561005 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/005/SRR1561005/SRR1561005.fastq.gz
+SRR1561006 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/006/SRR1561006/SRR1561006.fastq.gz
+SRR1561007 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/007/SRR1561007/SRR1561007.fastq.gz
+SRR1561008 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/008/SRR1561008/SRR1561008.fastq.gz
+SRR1561009 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/009/SRR1561009/SRR1561009.fastq.gz
+SRR1561010 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/000/SRR1561010/SRR1561010.fastq.gz
+SRR1561011 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/001/SRR1561011/SRR1561011.fastq.gz
+SRR1561012 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/002/SRR1561012/SRR1561012.fastq.gz
+SRR1561013 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/003/SRR1561013/SRR1561013.fastq.gz
+SRR1561014 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/004/SRR1561014/SRR1561014.fastq.gz
+SRR1561015 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/005/SRR1561015/SRR1561015.fastq.gz

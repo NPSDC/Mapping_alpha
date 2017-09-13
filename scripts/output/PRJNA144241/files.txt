@@ -1,0 +1,1 @@
+SRR315684 ftp.sra.ebi.ac.uk/vol1/fastq/SRR315/SRR315684/SRR315684.fastq.gz

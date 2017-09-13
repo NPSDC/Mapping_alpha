@@ -1,0 +1,2 @@
+SRR3452298 ftp.sra.ebi.ac.uk/vol1/fastq/SRR345/008/SRR3452298/SRR3452298.fastq.gz
+SRR3452299 ftp.sra.ebi.ac.uk/vol1/fastq/SRR345/009/SRR3452299/SRR3452299.fastq.gz

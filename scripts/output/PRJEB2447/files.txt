@@ -1,0 +1,6 @@
+ERR030904 ftp.sra.ebi.ac.uk/vol1/fastq/ERR030/ERR030904/ERR030904.fastq.gz
+ERR030905 ftp.sra.ebi.ac.uk/vol1/fastq/ERR030/ERR030905/ERR030905.fastq.gz
+ERR030906 ftp.sra.ebi.ac.uk/vol1/fastq/ERR030/ERR030906/ERR030906.fastq.gz
+ERR030907 ftp.sra.ebi.ac.uk/vol1/fastq/ERR030/ERR030907/ERR030907.fastq.gz
+ERR030908 ftp.sra.ebi.ac.uk/vol1/fastq/ERR030/ERR030908/ERR030908.fastq.gz
+ERR459207 ftp.sra.ebi.ac.uk/vol1/fastq/ERR459/ERR459207/ERR459207.fastq.gz

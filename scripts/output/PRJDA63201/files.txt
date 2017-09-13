@@ -1,0 +1,4 @@
+DRR000894 ftp.sra.ebi.ac.uk/vol1/fastq/DRR000/DRR000894/DRR000894.fastq.gz
+DRR000895 ftp.sra.ebi.ac.uk/vol1/fastq/DRR000/DRR000895/DRR000895.fastq.gz
+DRR000896 ftp.sra.ebi.ac.uk/vol1/fastq/DRR000/DRR000896/DRR000896.fastq.gz
+DRR002426 ftp.sra.ebi.ac.uk/vol1/fastq/DRR002/DRR002426/DRR002426.fastq.gz

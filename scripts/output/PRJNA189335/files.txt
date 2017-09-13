@@ -1,0 +1,5 @@
+SRR708140 ftp.sra.ebi.ac.uk/vol1/fastq/SRR708/SRR708140/SRR708140.fastq.gz
+SRR708141 ftp.sra.ebi.ac.uk/vol1/fastq/SRR708/SRR708141/SRR708141.fastq.gz
+SRR708142 ftp.sra.ebi.ac.uk/vol1/fastq/SRR708/SRR708142/SRR708142.fastq.gz
+SRR708143 ftp.sra.ebi.ac.uk/vol1/fastq/SRR708/SRR708143/SRR708143.fastq.gz
+SRR708144 ftp.sra.ebi.ac.uk/vol1/fastq/SRR708/SRR708144/SRR708144.fastq.gz

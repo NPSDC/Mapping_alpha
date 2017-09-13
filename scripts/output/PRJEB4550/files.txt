@@ -1,0 +1,8 @@
+ERR338502 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338502/ERR338502.fastq.gz
+ERR338503 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338503/ERR338503.fastq.gz
+ERR338504 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338504/ERR338504.fastq.gz
+ERR338505 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338505/ERR338505.fastq.gz
+ERR338506 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338506/ERR338506.fastq.gz
+ERR338507 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338507/ERR338507.fastq.gz
+ERR338508 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338508/ERR338508.fastq.gz
+ERR338509 ftp.sra.ebi.ac.uk/vol1/fastq/ERR338/ERR338509/ERR338509.fastq.gz

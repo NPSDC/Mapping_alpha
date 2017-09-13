@@ -1,0 +1,4 @@
+ERR1279117 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/007/ERR1279117/ERR1279117.fastq.gz
+ERR1279118 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/008/ERR1279118/ERR1279118.fastq.gz
+ERR1279119 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/009/ERR1279119/ERR1279119.fastq.gz
+ERR1279120 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/000/ERR1279120/ERR1279120.fastq.gz

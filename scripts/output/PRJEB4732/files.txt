@@ -1,0 +1,4 @@
+ERR351359 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351359/ERR351359.fastq.gz
+ERR351366 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351366/ERR351366.fastq.gz
+ERR351380 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351380/ERR351380.fastq.gz
+ERR351382 ftp.sra.ebi.ac.uk/vol1/fastq/ERR351/ERR351382/ERR351382.fastq.gz

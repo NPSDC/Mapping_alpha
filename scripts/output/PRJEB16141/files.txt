@@ -1,0 +1,6 @@
+ERR1692141 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/001/ERR1692141/ERR1692141.fastq.gz
+ERR1692142 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/002/ERR1692142/ERR1692142.fastq.gz
+ERR1692143 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/003/ERR1692143/ERR1692143.fastq.gz
+ERR1692144 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/004/ERR1692144/ERR1692144.fastq.gz
+ERR1692145 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/005/ERR1692145/ERR1692145.fastq.gz
+ERR1692146 ftp.sra.ebi.ac.uk/vol1/fastq/ERR169/006/ERR1692146/ERR1692146.fastq.gz

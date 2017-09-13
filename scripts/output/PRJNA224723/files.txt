@@ -1,0 +1,1 @@
+SRR1914304 ftp.sra.ebi.ac.uk/vol1/fastq/SRR191/004/SRR1914304/SRR1914304.fastq.gz

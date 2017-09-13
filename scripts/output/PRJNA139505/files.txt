@@ -1,0 +1,3 @@
+SRR191364 ftp.sra.ebi.ac.uk/vol1/fastq/SRR191/SRR191364/SRR191364.fastq.gz
+SRR191365 ftp.sra.ebi.ac.uk/vol1/fastq/SRR191/SRR191365/SRR191365.fastq.gz
+SRR191366 ftp.sra.ebi.ac.uk/vol1/fastq/SRR191/SRR191366/SRR191366.fastq.gz

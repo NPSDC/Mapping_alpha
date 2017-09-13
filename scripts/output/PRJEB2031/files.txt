@@ -1,0 +1,2 @@
+ERR007679 ftp.sra.ebi.ac.uk/vol1/fastq/ERR007/ERR007679/ERR007679.fastq.gz
+ERR007681 ftp.sra.ebi.ac.uk/vol1/fastq/ERR007/ERR007681/ERR007681.fastq.gz

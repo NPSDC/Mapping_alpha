@@ -1,0 +1,16 @@
+DRR045033 ftp.sra.ebi.ac.uk/vol1/fastq/DRR045/DRR045033/DRR045033.fastq.gz
+DRR045034 ftp.sra.ebi.ac.uk/vol1/fastq/DRR045/DRR045034/DRR045034.fastq.gz
+DRR055049 ftp.sra.ebi.ac.uk/vol1/fastq/DRR055/DRR055049/DRR055049.fastq.gz
+DRR055050 ftp.sra.ebi.ac.uk/vol1/fastq/DRR055/DRR055050/DRR055050.fastq.gz
+DRR073003 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073003/DRR073003.fastq.gz
+DRR073004 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073004/DRR073004.fastq.gz
+DRR073005 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073005/DRR073005.fastq.gz
+DRR073006 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073006/DRR073006.fastq.gz
+DRR073007 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073007/DRR073007.fastq.gz
+DRR073008 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073008/DRR073008.fastq.gz
+DRR073009 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073009/DRR073009.fastq.gz
+DRR073010 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073010/DRR073010.fastq.gz
+DRR073011 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073011/DRR073011.fastq.gz
+DRR073012 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073012/DRR073012.fastq.gz
+DRR073013 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073013/DRR073013.fastq.gz
+DRR073014 ftp.sra.ebi.ac.uk/vol1/fastq/DRR073/DRR073014/DRR073014.fastq.gz

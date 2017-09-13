@@ -1,0 +1,14 @@
+SRR020161 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020161/SRR020161.fastq.gz
+SRR020162 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020162/SRR020162.fastq.gz
+SRR020163 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020163/SRR020163.fastq.gz
+SRR020164 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020164/SRR020164.fastq.gz
+SRR020165 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020165/SRR020165.fastq.gz
+SRR020166 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020166/SRR020166.fastq.gz
+SRR020167 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020167/SRR020167.fastq.gz
+SRR020168 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020168/SRR020168.fastq.gz
+SRR020169 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020169/SRR020169.fastq.gz
+SRR020170 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020170/SRR020170.fastq.gz
+SRR020171 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020171/SRR020171.fastq.gz
+SRR020172 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020172/SRR020172.fastq.gz
+SRR020173 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020173/SRR020173.fastq.gz
+SRR020174 ftp.sra.ebi.ac.uk/vol1/fastq/SRR020/SRR020174/SRR020174.fastq.gz

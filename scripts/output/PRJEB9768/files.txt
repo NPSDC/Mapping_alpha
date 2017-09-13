@@ -1,0 +1,2 @@
+ERR951627 ftp.sra.ebi.ac.uk/vol1/fastq/ERR951/ERR951627/ERR951627.fastq.gz
+ERR951628 ftp.sra.ebi.ac.uk/vol1/fastq/ERR951/ERR951628/ERR951628.fastq.gz
