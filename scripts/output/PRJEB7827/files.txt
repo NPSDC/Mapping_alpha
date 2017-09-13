@@ -1,3 +1,0 @@
-ERR687929 ftp.sra.ebi.ac.uk/vol1/fastq/ERR687/ERR687929/ERR687929.fastq.gz
-ERR687930 ftp.sra.ebi.ac.uk/vol1/fastq/ERR687/ERR687930/ERR687930.fastq.gz
-ERR687931 ftp.sra.ebi.ac.uk/vol1/fastq/ERR687/ERR687931/ERR687931.fastq.gz

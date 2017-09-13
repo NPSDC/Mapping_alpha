@@ -1,6 +1,0 @@
-SRR5194741 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/001/SRR5194741/SRR5194741.fastq.gz
-SRR5194742 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/002/SRR5194742/SRR5194742.fastq.gz
-SRR5194743 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/003/SRR5194743/SRR5194743.fastq.gz
-SRR5194744 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/004/SRR5194744/SRR5194744.fastq.gz
-SRR5194745 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/005/SRR5194745/SRR5194745.fastq.gz
-SRR5194746 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/006/SRR5194746/SRR5194746.fastq.gz

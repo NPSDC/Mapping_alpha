@@ -1,2 +1,0 @@
-SRR2131556 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/006/SRR2131556/SRR2131556_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/006/SRR2131556/SRR2131556_2.fastq.gz;
-SRR2131557 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/007/SRR2131557/SRR2131557.fastq.gz

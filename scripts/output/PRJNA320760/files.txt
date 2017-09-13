@@ -1,6 +1,0 @@
-SRR3478132 ftp.sra.ebi.ac.uk/vol1/fastq/SRR347/002/SRR3478132/SRR3478132.fastq.gz
-SRR3478133 ftp.sra.ebi.ac.uk/vol1/fastq/SRR347/003/SRR3478133/SRR3478133.fastq.gz
-SRR3478134 ftp.sra.ebi.ac.uk/vol1/fastq/SRR347/004/SRR3478134/SRR3478134.fastq.gz
-SRR3478135 
-SRR3478136 ftp.sra.ebi.ac.uk/vol1/fastq/SRR347/006/SRR3478136/SRR3478136.fastq.gz
-SRR3478137 

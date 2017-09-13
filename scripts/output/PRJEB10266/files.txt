@@ -1,4 +1,0 @@
-ERR979774 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979774/ERR979774.fastq.gz
-ERR979775 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979775/ERR979775.fastq.gz
-ERR979776 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979776/ERR979776.fastq.gz
-ERR979777 ftp.sra.ebi.ac.uk/vol1/fastq/ERR979/ERR979777/ERR979777.fastq.gz

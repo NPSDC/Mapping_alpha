@@ -1,7 +1,0 @@
-SRR2659531 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/001/SRR2659531/SRR2659531.fastq.gz
-SRR2659532 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/002/SRR2659532/SRR2659532.fastq.gz
-SRR2659533 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/003/SRR2659533/SRR2659533.fastq.gz
-SRR2659534 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/004/SRR2659534/SRR2659534.fastq.gz
-SRR2659535 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/005/SRR2659535/SRR2659535.fastq.gz
-SRR2659536 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/006/SRR2659536/SRR2659536.fastq.gz
-SRR2659537 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/007/SRR2659537/SRR2659537.fastq.gz

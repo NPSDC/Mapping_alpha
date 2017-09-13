@@ -1,4 +1,0 @@
-ERR366004 ftp.sra.ebi.ac.uk/vol1/fastq/ERR366/ERR366004/ERR366004.fastq.gz
-ERR366005 ftp.sra.ebi.ac.uk/vol1/fastq/ERR366/ERR366005/ERR366005.fastq.gz
-ERR366006 ftp.sra.ebi.ac.uk/vol1/fastq/ERR366/ERR366006/ERR366006.fastq.gz
-ERR366007 ftp.sra.ebi.ac.uk/vol1/fastq/ERR366/ERR366007/ERR366007.fastq.gz

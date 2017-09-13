@@ -1,2 +1,0 @@
-SRR2651091 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/001/SRR2651091/SRR2651091.fastq.gz
-SRR2651092 ftp.sra.ebi.ac.uk/vol1/fastq/SRR265/002/SRR2651092/SRR2651092.fastq.gz

@@ -1,5 +1,0 @@
-DRR027560 ftp.sra.ebi.ac.uk/vol1/fastq/DRR027/DRR027560/DRR027560.fastq.gz
-DRR027561 ftp.sra.ebi.ac.uk/vol1/fastq/DRR027/DRR027561/DRR027561.fastq.gz
-DRR027562 ftp.sra.ebi.ac.uk/vol1/fastq/DRR027/DRR027562/DRR027562.fastq.gz
-DRR027563 ftp.sra.ebi.ac.uk/vol1/fastq/DRR027/DRR027563/DRR027563.fastq.gz
-DRR027564 ftp.sra.ebi.ac.uk/vol1/fastq/DRR027/DRR027564/DRR027564.fastq.gz

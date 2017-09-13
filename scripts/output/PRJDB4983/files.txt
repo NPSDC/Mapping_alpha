@@ -1,4 +1,0 @@
-DRR065667 
-DRR065668 ftp.sra.ebi.ac.uk/vol1/fastq/DRR065/DRR065668/DRR065668.fastq.gz
-DRR065669 ftp.sra.ebi.ac.uk/vol1/fastq/DRR065/DRR065669/DRR065669.fastq.gz
-DRR065670 ftp.sra.ebi.ac.uk/vol1/fastq/DRR065/DRR065670/DRR065670.fastq.gz

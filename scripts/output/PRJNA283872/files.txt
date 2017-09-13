@@ -1,7 +1,0 @@
-SRR2018236 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/006/SRR2018236/SRR2018236.fastq.gz
-SRR2018237 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/007/SRR2018237/SRR2018237.fastq.gz
-SRR2018238 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/008/SRR2018238/SRR2018238.fastq.gz
-SRR2018239 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/009/SRR2018239/SRR2018239.fastq.gz
-SRR2018240 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/000/SRR2018240/SRR2018240.fastq.gz
-SRR2018245 ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/005/SRR2018245/SRR2018245.fastq.gz
-SRR3345690 ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/000/SRR3345690/SRR3345690.fastq.gz

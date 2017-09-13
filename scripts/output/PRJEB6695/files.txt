@@ -1,3 +1,0 @@
-ERR560462 ftp.sra.ebi.ac.uk/vol1/fastq/ERR560/ERR560462/ERR560462.fastq.gz
-ERR560463 ftp.sra.ebi.ac.uk/vol1/fastq/ERR560/ERR560463/ERR560463.fastq.gz
-ERR560464 ftp.sra.ebi.ac.uk/vol1/fastq/ERR560/ERR560464/ERR560464.fastq.gz

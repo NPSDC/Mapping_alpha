@@ -1,3 +1,0 @@
-SRR1560835 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/005/SRR1560835/SRR1560835.fastq.gz
-SRR1560836 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/006/SRR1560836/SRR1560836.fastq.gz
-SRR1560837 ftp.sra.ebi.ac.uk/vol1/fastq/SRR156/007/SRR1560837/SRR1560837.fastq.gz

@@ -1,8 +1,0 @@
-ERR1230216 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/006/ERR1230216/ERR1230216.fastq.gz
-ERR1230217 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/007/ERR1230217/ERR1230217.fastq.gz
-ERR1230218 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/008/ERR1230218/ERR1230218.fastq.gz
-ERR1230219 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/009/ERR1230219/ERR1230219.fastq.gz
-ERR1230220 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/000/ERR1230220/ERR1230220.fastq.gz
-ERR1230221 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/001/ERR1230221/ERR1230221.fastq.gz
-ERR1230222 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/002/ERR1230222/ERR1230222.fastq.gz
-ERR1230223 ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/003/ERR1230223/ERR1230223.fastq.gz

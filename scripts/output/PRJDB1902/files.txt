@@ -1,1 +1,0 @@
-DRR002007 ftp.sra.ebi.ac.uk/vol1/fastq/DRR002/DRR002007/DRR002007.fastq.gz

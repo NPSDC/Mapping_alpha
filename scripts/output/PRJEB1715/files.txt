@@ -1,7 +1,0 @@
-ERR248779 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248779/ERR248779.fastq.gz
-ERR248780 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248780/ERR248780.fastq.gz
-ERR248781 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248781/ERR248781.fastq.gz
-ERR248782 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248782/ERR248782.fastq.gz
-ERR248783 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248783/ERR248783.fastq.gz
-ERR248784 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248784/ERR248784.fastq.gz
-ERR248785 ftp.sra.ebi.ac.uk/vol1/fastq/ERR248/ERR248785/ERR248785.fastq.gz

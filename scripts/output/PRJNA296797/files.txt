@@ -1,4 +1,0 @@
-SRR2501739 ftp.sra.ebi.ac.uk/vol1/fastq/SRR250/009/SRR2501739/SRR2501739.fastq.gz
-SRR2501740 ftp.sra.ebi.ac.uk/vol1/fastq/SRR250/000/SRR2501740/SRR2501740.fastq.gz
-SRR2501741 ftp.sra.ebi.ac.uk/vol1/fastq/SRR250/001/SRR2501741/SRR2501741.fastq.gz
-SRR2501742 ftp.sra.ebi.ac.uk/vol1/fastq/SRR250/002/SRR2501742/SRR2501742.fastq.gz

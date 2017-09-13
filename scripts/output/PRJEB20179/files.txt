@@ -1,2 +1,0 @@
-ERR1904943 ftp.sra.ebi.ac.uk/vol1/fastq/ERR190/003/ERR1904943/ERR1904943.fastq.gz
-ERR1904944 ftp.sra.ebi.ac.uk/vol1/fastq/ERR190/004/ERR1904944/ERR1904944.fastq.gz

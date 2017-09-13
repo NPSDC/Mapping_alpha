@@ -1,4 +1,0 @@
-ERR690702 ftp.sra.ebi.ac.uk/vol1/fastq/ERR690/ERR690702/ERR690702.fastq.gz
-ERR690703 ftp.sra.ebi.ac.uk/vol1/fastq/ERR690/ERR690703/ERR690703.fastq.gz
-ERR690704 ftp.sra.ebi.ac.uk/vol1/fastq/ERR690/ERR690704/ERR690704.fastq.gz
-ERR690705 ftp.sra.ebi.ac.uk/vol1/fastq/ERR690/ERR690705/ERR690705.fastq.gz

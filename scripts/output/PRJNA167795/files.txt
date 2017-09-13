@@ -1,2 +1,0 @@
-SRR503002 ftp.sra.ebi.ac.uk/vol1/fastq/SRR503/SRR503002/SRR503002.fastq.gz
-SRR503003 ftp.sra.ebi.ac.uk/vol1/fastq/SRR503/SRR503003/SRR503003.fastq.gz

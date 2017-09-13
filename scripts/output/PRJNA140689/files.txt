@@ -1,3 +1,0 @@
-SRR191720 ftp.sra.ebi.ac.uk/vol1/fastq/SRR191/SRR191720/SRR191720.fastq.gz
-SRR191721 
-SRR191722 

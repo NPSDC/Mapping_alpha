@@ -1,2 +1,0 @@
-ERR1161586 ftp.sra.ebi.ac.uk/vol1/fastq/ERR116/006/ERR1161586/ERR1161586.fastq.gz
-ERR1161587 ftp.sra.ebi.ac.uk/vol1/fastq/ERR116/007/ERR1161587/ERR1161587.fastq.gz

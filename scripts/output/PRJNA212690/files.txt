@@ -1,4 +1,0 @@
-SRR941184 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941184/SRR941184.fastq.gz
-SRR941185 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941185/SRR941185.fastq.gz
-SRR941186 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941186/SRR941186.fastq.gz
-SRR941187 ftp.sra.ebi.ac.uk/vol1/fastq/SRR941/SRR941187/SRR941187.fastq.gz

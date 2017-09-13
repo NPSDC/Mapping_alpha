@@ -1,5 +1,0 @@
-SRR1193311 ftp.sra.ebi.ac.uk/vol1/fastq/SRR119/001/SRR1193311/SRR1193311.fastq.gz
-SRR1193312 ftp.sra.ebi.ac.uk/vol1/fastq/SRR119/002/SRR1193312/SRR1193312.fastq.gz
-SRR1193313 ftp.sra.ebi.ac.uk/vol1/fastq/SRR119/003/SRR1193313/SRR1193313.fastq.gz
-SRR1193314 ftp.sra.ebi.ac.uk/vol1/fastq/SRR119/004/SRR1193314/SRR1193314.fastq.gz
-SRR1193315 ftp.sra.ebi.ac.uk/vol1/fastq/SRR119/005/SRR1193315/SRR1193315.fastq.gz

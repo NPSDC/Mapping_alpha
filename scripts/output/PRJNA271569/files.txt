@@ -1,4 +1,0 @@
-SRR1740030 ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/000/SRR1740030/SRR1740030.fastq.gz
-SRR1740031 ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/001/SRR1740031/SRR1740031.fastq.gz
-SRR1740032 ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/002/SRR1740032/SRR1740032.fastq.gz
-SRR1740033 ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/003/SRR1740033/SRR1740033.fastq.gz

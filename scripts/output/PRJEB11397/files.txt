@@ -1,5 +1,0 @@
-ERR1748641 ftp.sra.ebi.ac.uk/vol1/fastq/ERR174/001/ERR1748641/ERR1748641.fastq.gz
-ERR1748642 ftp.sra.ebi.ac.uk/vol1/fastq/ERR174/002/ERR1748642/ERR1748642.fastq.gz
-ERR1748643 ftp.sra.ebi.ac.uk/vol1/fastq/ERR174/003/ERR1748643/ERR1748643.fastq.gz
-ERR1748644 ftp.sra.ebi.ac.uk/vol1/fastq/ERR174/004/ERR1748644/ERR1748644.fastq.gz
-ERR1748645 ftp.sra.ebi.ac.uk/vol1/fastq/ERR174/005/ERR1748645/ERR1748645.fastq.gz

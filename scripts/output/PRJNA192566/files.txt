@@ -1,1 +1,0 @@
-SRR768730 ftp.sra.ebi.ac.uk/vol1/fastq/SRR768/SRR768730/SRR768730.fastq.gz

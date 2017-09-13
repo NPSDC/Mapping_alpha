@@ -1,1 +1,0 @@
-SRR907525 ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/SRR907525/SRR907525.fastq.gz

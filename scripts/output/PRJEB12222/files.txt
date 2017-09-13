@@ -1,2 +1,0 @@
-ERR1195794 ftp.sra.ebi.ac.uk/vol1/fastq/ERR119/004/ERR1195794/ERR1195794.fastq.gz
-ERR1195795 ftp.sra.ebi.ac.uk/vol1/fastq/ERR119/005/ERR1195795/ERR1195795.fastq.gz

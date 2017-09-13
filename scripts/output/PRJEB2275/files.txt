@@ -1,8 +1,0 @@
-ERR127114 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127114/ERR127114.fastq.gz
-ERR127115 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127115/ERR127115.fastq.gz
-ERR127116 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127116/ERR127116.fastq.gz
-ERR127117 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127117/ERR127117.fastq.gz
-ERR127118 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127118/ERR127118.fastq.gz
-ERR127119 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127119/ERR127119.fastq.gz
-ERR127120 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127120/ERR127120.fastq.gz
-ERR127121 ftp.sra.ebi.ac.uk/vol1/fastq/ERR127/ERR127121/ERR127121.fastq.gz

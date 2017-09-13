@@ -1,3 +1,0 @@
-SRR085460 ftp.sra.ebi.ac.uk/vol1/fastq/SRR085/SRR085460/SRR085460.fastq.gz
-SRR085461 ftp.sra.ebi.ac.uk/vol1/fastq/SRR085/SRR085461/SRR085461.fastq.gz
-SRR085462 ftp.sra.ebi.ac.uk/vol1/fastq/SRR085/SRR085462/SRR085462.fastq.gz

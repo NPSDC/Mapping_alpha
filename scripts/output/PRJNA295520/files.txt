@@ -1,5 +1,0 @@
-SRR2390493 ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/003/SRR2390493/SRR2390493.fastq.gz
-SRR2390494 ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/004/SRR2390494/SRR2390494.fastq.gz
-SRR2390495 ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/005/SRR2390495/SRR2390495.fastq.gz
-SRR2390496 ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/006/SRR2390496/SRR2390496.fastq.gz
-SRR2390497 ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/007/SRR2390497/SRR2390497.fastq.gz

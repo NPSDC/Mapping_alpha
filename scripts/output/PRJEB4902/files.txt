@@ -1,8 +1,0 @@
-ERR361905 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361905/ERR361905.fastq.gz
-ERR361906 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361906/ERR361906.fastq.gz
-ERR361907 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361907/ERR361907.fastq.gz
-ERR361908 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361908/ERR361908.fastq.gz
-ERR361909 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361909/ERR361909.fastq.gz
-ERR361910 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361910/ERR361910.fastq.gz
-ERR361911 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361911/ERR361911.fastq.gz
-ERR361912 ftp.sra.ebi.ac.uk/vol1/fastq/ERR361/ERR361912/ERR361912.fastq.gz

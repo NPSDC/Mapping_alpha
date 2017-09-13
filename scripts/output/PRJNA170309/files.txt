@@ -1,1 +1,0 @@
-SRR520341 ftp.sra.ebi.ac.uk/vol1/fastq/SRR520/SRR520341/SRR520341.fastq.gz

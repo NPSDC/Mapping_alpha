@@ -1,1 +1,0 @@
-SRR3747614 ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/004/SRR3747614/SRR3747614.fastq.gz

@@ -1,1 +1,0 @@
-SRR364491 ftp.sra.ebi.ac.uk/vol1/fastq/SRR364/SRR364491/SRR364491.fastq.gz

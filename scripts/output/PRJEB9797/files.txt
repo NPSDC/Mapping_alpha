@@ -1,3 +1,0 @@
-ERR1905261 ftp.sra.ebi.ac.uk/vol1/fastq/ERR190/001/ERR1905261/ERR1905261.fastq.gz
-ERR1905262 ftp.sra.ebi.ac.uk/vol1/fastq/ERR190/002/ERR1905262/ERR1905262.fastq.gz
-ERR1905263 ftp.sra.ebi.ac.uk/vol1/fastq/ERR190/003/ERR1905263/ERR1905263.fastq.gz

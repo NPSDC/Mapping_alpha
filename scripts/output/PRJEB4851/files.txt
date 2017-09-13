@@ -1,9 +1,0 @@
-ERR359698 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359698/ERR359698.fastq.gz
-ERR359699 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359699/ERR359699.fastq.gz
-ERR359700 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359700/ERR359700.fastq.gz
-ERR359701 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359701/ERR359701.fastq.gz
-ERR359702 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359702/ERR359702.fastq.gz
-ERR359703 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359703/ERR359703.fastq.gz
-ERR359704 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359704/ERR359704.fastq.gz
-ERR359705 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359705/ERR359705.fastq.gz
-ERR359706 ftp.sra.ebi.ac.uk/vol1/fastq/ERR359/ERR359706/ERR359706.fastq.gz

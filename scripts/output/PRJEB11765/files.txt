@@ -1,4 +1,0 @@
-ERR1135007 ftp.sra.ebi.ac.uk/vol1/fastq/ERR113/007/ERR1135007/ERR1135007.fastq.gz
-ERR1135008 ftp.sra.ebi.ac.uk/vol1/fastq/ERR113/008/ERR1135008/ERR1135008.fastq.gz
-ERR1135009 ftp.sra.ebi.ac.uk/vol1/fastq/ERR113/009/ERR1135009/ERR1135009.fastq.gz
-ERR1135010 ftp.sra.ebi.ac.uk/vol1/fastq/ERR113/000/ERR1135010/ERR1135010.fastq.gz

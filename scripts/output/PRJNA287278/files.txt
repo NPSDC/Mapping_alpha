@@ -1,3 +1,0 @@
-SRR2067926 ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067926/SRR2067926.fastq.gz
-SRR2067927 ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2067927/SRR2067927.fastq.gz
-SRR2067928 ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/008/SRR2067928/SRR2067928.fastq.gz

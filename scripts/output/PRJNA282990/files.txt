@@ -1,1 +1,0 @@
-SRR2025367 ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/007/SRR2025367/SRR2025367.fastq.gz

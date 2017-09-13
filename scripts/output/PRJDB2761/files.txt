@@ -1,3 +1,0 @@
-DRR015020 ftp.sra.ebi.ac.uk/vol1/fastq/DRR015/DRR015020/DRR015020.fastq.gz
-DRR023199 ftp.sra.ebi.ac.uk/vol1/fastq/DRR023/DRR023199/DRR023199.fastq.gz
-DRR023200 ftp.sra.ebi.ac.uk/vol1/fastq/DRR023/DRR023200/DRR023200.fastq.gz

@@ -1,1 +1,0 @@
-SRR496402 ftp.sra.ebi.ac.uk/vol1/fastq/SRR496/SRR496402/SRR496402.fastq.gz

@@ -1,3 +1,0 @@
-ERR652839 ftp.sra.ebi.ac.uk/vol1/fastq/ERR652/ERR652839/ERR652839.fastq.gz
-ERR652840 ftp.sra.ebi.ac.uk/vol1/fastq/ERR652/ERR652840/ERR652840.fastq.gz
-ERR652841 ftp.sra.ebi.ac.uk/vol1/fastq/ERR652/ERR652841/ERR652841.fastq.gz

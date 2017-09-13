@@ -1,6 +1,0 @@
-ERR700054 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700054/ERR700054.fastq.gz
-ERR700055 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700055/ERR700055.fastq.gz
-ERR700056 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700056/ERR700056.fastq.gz
-ERR700057 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700057/ERR700057.fastq.gz
-ERR700058 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700058/ERR700058.fastq.gz
-ERR700059 ftp.sra.ebi.ac.uk/vol1/fastq/ERR700/ERR700059/ERR700059.fastq.gz

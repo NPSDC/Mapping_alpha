@@ -1,1 +1,0 @@
-SRR851624 ftp.sra.ebi.ac.uk/vol1/fastq/SRR851/SRR851624/SRR851624.fastq.gz

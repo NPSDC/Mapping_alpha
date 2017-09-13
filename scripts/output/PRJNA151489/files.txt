@@ -1,3 +1,0 @@
-SRR389017 ftp.sra.ebi.ac.uk/vol1/fastq/SRR389/SRR389017/SRR389017.fastq.gz
-SRR389018 ftp.sra.ebi.ac.uk/vol1/fastq/SRR389/SRR389018/SRR389018.fastq.gz
-SRR389019 ftp.sra.ebi.ac.uk/vol1/fastq/SRR389/SRR389019/SRR389019.fastq.gz

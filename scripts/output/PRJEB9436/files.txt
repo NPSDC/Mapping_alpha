@@ -1,1 +1,0 @@
-ERR895375 ftp.sra.ebi.ac.uk/vol1/fastq/ERR895/ERR895375/ERR895375.fastq.gz

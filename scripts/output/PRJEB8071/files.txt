@@ -1,3 +1,0 @@
-ERR707114 ftp.sra.ebi.ac.uk/vol1/fastq/ERR707/ERR707114/ERR707114.fastq.gz
-ERR707115 ftp.sra.ebi.ac.uk/vol1/fastq/ERR707/ERR707115/ERR707115.fastq.gz
-ERR707116 ftp.sra.ebi.ac.uk/vol1/fastq/ERR707/ERR707116/ERR707116.fastq.gz

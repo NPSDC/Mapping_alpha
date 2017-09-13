@@ -1,1 +1,0 @@
-SRR2239846 ftp.sra.ebi.ac.uk/vol1/fastq/SRR223/006/SRR2239846/SRR2239846.fastq.gz

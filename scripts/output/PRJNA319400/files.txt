@@ -1,4 +1,0 @@
-SRR3421208 ftp.sra.ebi.ac.uk/vol1/fastq/SRR342/008/SRR3421208/SRR3421208.fastq.gz
-SRR3421209 ftp.sra.ebi.ac.uk/vol1/fastq/SRR342/009/SRR3421209/SRR3421209.fastq.gz
-SRR3421210 ftp.sra.ebi.ac.uk/vol1/fastq/SRR342/000/SRR3421210/SRR3421210.fastq.gz
-SRR3421211 ftp.sra.ebi.ac.uk/vol1/fastq/SRR342/001/SRR3421211/SRR3421211.fastq.gz

@@ -1,4 +1,0 @@
-ERR505076 ftp.sra.ebi.ac.uk/vol1/fastq/ERR505/ERR505076/ERR505076.fastq.gz
-ERR505077 ftp.sra.ebi.ac.uk/vol1/fastq/ERR505/ERR505077/ERR505077.fastq.gz
-ERR505078 ftp.sra.ebi.ac.uk/vol1/fastq/ERR505/ERR505078/ERR505078.fastq.gz
-ERR505079 ftp.sra.ebi.ac.uk/vol1/fastq/ERR505/ERR505079/ERR505079.fastq.gz

@@ -1,3 +1,0 @@
-ERR978096 ftp.sra.ebi.ac.uk/vol1/fastq/ERR978/ERR978096/ERR978096.fastq.gz
-ERR978097 ftp.sra.ebi.ac.uk/vol1/fastq/ERR978/ERR978097/ERR978097.fastq.gz
-ERR978098 ftp.sra.ebi.ac.uk/vol1/fastq/ERR978/ERR978098/ERR978098.fastq.gz

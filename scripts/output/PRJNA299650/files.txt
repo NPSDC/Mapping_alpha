@@ -1,2 +1,0 @@
-SRR2774675 ftp.sra.ebi.ac.uk/vol1/fastq/SRR277/005/SRR2774675/SRR2774675.fastq.gz
-SRR2774676 ftp.sra.ebi.ac.uk/vol1/fastq/SRR277/006/SRR2774676/SRR2774676.fastq.gz

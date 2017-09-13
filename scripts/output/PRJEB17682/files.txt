@@ -1,5 +1,0 @@
-ERR1720011 ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/001/ERR1720011/ERR1720011.fastq.gz
-ERR1720012 ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/002/ERR1720012/ERR1720012.fastq.gz
-ERR1720013 ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/003/ERR1720013/ERR1720013.fastq.gz
-ERR1720014 ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1720014/ERR1720014.fastq.gz
-ERR1720015 ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/005/ERR1720015/ERR1720015.fastq.gz
