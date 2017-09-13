@@ -1,0 +1,1 @@
+SRR2318022 ftp.sra.ebi.ac.uk/vol1/fastq/SRR231/002/SRR2318022/SRR2318022.fastq.gz

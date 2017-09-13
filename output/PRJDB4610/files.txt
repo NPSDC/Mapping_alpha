@@ -1,0 +1,2 @@
+DRR056752 ftp.sra.ebi.ac.uk/vol1/fastq/DRR056/DRR056752/DRR056752.fastq.gz
+DRR056753 ftp.sra.ebi.ac.uk/vol1/fastq/DRR056/DRR056753/DRR056753.fastq.gz

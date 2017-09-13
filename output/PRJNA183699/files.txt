@@ -1,0 +1,1 @@
+SRR630871 ftp.sra.ebi.ac.uk/vol1/fastq/SRR630/SRR630871/SRR630871.fastq.gz

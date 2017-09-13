@@ -1,0 +1,16 @@
+ERR296718 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296718/ERR296718.fastq.gz
+ERR296719 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296719/ERR296719.fastq.gz
+ERR296720 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296720/ERR296720.fastq.gz
+ERR296721 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296721/ERR296721.fastq.gz
+ERR296722 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296722/ERR296722.fastq.gz
+ERR296723 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296723/ERR296723.fastq.gz
+ERR296724 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296724/ERR296724.fastq.gz
+ERR296725 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296725/ERR296725.fastq.gz
+ERR296726 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296726/ERR296726.fastq.gz
+ERR296727 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296727/ERR296727.fastq.gz
+ERR296728 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296728/ERR296728.fastq.gz
+ERR296729 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296729/ERR296729.fastq.gz
+ERR296730 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296730/ERR296730.fastq.gz
+ERR296731 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296731/ERR296731.fastq.gz
+ERR296732 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296732/ERR296732.fastq.gz
+ERR296733 ftp.sra.ebi.ac.uk/vol1/fastq/ERR296/ERR296733/ERR296733.fastq.gz

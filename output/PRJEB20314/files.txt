@@ -1,0 +1,8 @@
+ERR1916484 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/004/ERR1916484/ERR1916484.fastq.gz
+ERR1916485 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/005/ERR1916485/ERR1916485.fastq.gz
+ERR1916486 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/006/ERR1916486/ERR1916486.fastq.gz
+ERR1916487 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/007/ERR1916487/ERR1916487.fastq.gz
+ERR1916488 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/008/ERR1916488/ERR1916488.fastq.gz
+ERR1916489 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/009/ERR1916489/ERR1916489.fastq.gz
+ERR1916490 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/000/ERR1916490/ERR1916490.fastq.gz
+ERR1916491 ftp.sra.ebi.ac.uk/vol1/fastq/ERR191/001/ERR1916491/ERR1916491.fastq.gz

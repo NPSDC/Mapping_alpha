@@ -1,0 +1,1 @@
+SRR2059425 ftp.sra.ebi.ac.uk/vol1/fastq/SRR205/005/SRR2059425/SRR2059425.fastq.gz

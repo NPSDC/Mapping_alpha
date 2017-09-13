@@ -1,0 +1,8 @@
+ERR202416 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202416/ERR202416.fastq.gz
+ERR202417 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202417/ERR202417.fastq.gz
+ERR202418 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202418/ERR202418.fastq.gz
+ERR202419 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202419/ERR202419.fastq.gz
+ERR202420 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202420/ERR202420.fastq.gz
+ERR202421 ftp.sra.ebi.ac.uk/vol1/fastq/ERR202/ERR202421/ERR202421.fastq.gz
+ERR305628 ftp.sra.ebi.ac.uk/vol1/fastq/ERR305/ERR305628/ERR305628.fastq.gz
+ERR305629 ftp.sra.ebi.ac.uk/vol1/fastq/ERR305/ERR305629/ERR305629.fastq.gz

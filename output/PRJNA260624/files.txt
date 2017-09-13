@@ -1,0 +1,3 @@
+SRR1571989 ftp.sra.ebi.ac.uk/vol1/fastq/SRR157/009/SRR1571989/SRR1571989.fastq.gz
+SRR1571990 ftp.sra.ebi.ac.uk/vol1/fastq/SRR157/000/SRR1571990/SRR1571990.fastq.gz
+SRR1571991 ftp.sra.ebi.ac.uk/vol1/fastq/SRR157/001/SRR1571991/SRR1571991.fastq.gz

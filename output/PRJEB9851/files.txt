@@ -1,0 +1,8 @@
+ERR958487 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958487/ERR958487.fastq.gz
+ERR958488 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958488/ERR958488.fastq.gz
+ERR958489 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958489/ERR958489.fastq.gz
+ERR958490 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958490/ERR958490.fastq.gz
+ERR958491 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958491/ERR958491.fastq.gz
+ERR958492 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958492/ERR958492.fastq.gz
+ERR958493 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958493/ERR958493.fastq.gz
+ERR958494 ftp.sra.ebi.ac.uk/vol1/fastq/ERR958/ERR958494/ERR958494.fastq.gz

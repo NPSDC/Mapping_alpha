@@ -1,0 +1,6 @@
+ERR1533162 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/002/ERR1533162/ERR1533162.fastq.gz
+ERR1533163 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/003/ERR1533163/ERR1533163.fastq.gz
+ERR1533164 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/004/ERR1533164/ERR1533164.fastq.gz
+ERR1533165 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/005/ERR1533165/ERR1533165.fastq.gz
+ERR1533166 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/006/ERR1533166/ERR1533166.fastq.gz
+ERR1533167 ftp.sra.ebi.ac.uk/vol1/fastq/ERR153/007/ERR1533167/ERR1533167.fastq.gz

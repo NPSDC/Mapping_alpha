@@ -1,0 +1,1 @@
+SRR2644784 ftp.sra.ebi.ac.uk/vol1/fastq/SRR264/004/SRR2644784/SRR2644784.fastq.gz

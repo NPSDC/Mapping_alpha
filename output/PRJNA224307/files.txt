@@ -1,0 +1,5 @@
+SRR1016357 ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/007/SRR1016357/SRR1016357.fastq.gz
+SRR1016358 ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/008/SRR1016358/SRR1016358.fastq.gz
+SRR1016359 ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/009/SRR1016359/SRR1016359.fastq.gz
+SRR1016360 ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/000/SRR1016360/SRR1016360.fastq.gz
+SRR1016361 ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/001/SRR1016361/SRR1016361.fastq.gz

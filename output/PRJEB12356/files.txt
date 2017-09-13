@@ -1,0 +1,15 @@
+ERR1201734 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/004/ERR1201734/ERR1201734.fastq.gz
+ERR1201735 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/005/ERR1201735/ERR1201735.fastq.gz
+ERR1201736 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/006/ERR1201736/ERR1201736.fastq.gz
+ERR1201737 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/007/ERR1201737/ERR1201737.fastq.gz
+ERR1201738 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/008/ERR1201738/ERR1201738.fastq.gz
+ERR1201739 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/009/ERR1201739/ERR1201739.fastq.gz
+ERR1201740 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/000/ERR1201740/ERR1201740.fastq.gz
+ERR1201741 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/001/ERR1201741/ERR1201741.fastq.gz
+ERR1201742 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/002/ERR1201742/ERR1201742.fastq.gz
+ERR1201743 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/003/ERR1201743/ERR1201743.fastq.gz
+ERR1201744 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/004/ERR1201744/ERR1201744.fastq.gz
+ERR1201745 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/005/ERR1201745/ERR1201745.fastq.gz
+ERR1201746 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/006/ERR1201746/ERR1201746.fastq.gz
+ERR1201747 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/007/ERR1201747/ERR1201747.fastq.gz
+ERR1201748 ftp.sra.ebi.ac.uk/vol1/fastq/ERR120/008/ERR1201748/ERR1201748.fastq.gz

@@ -1,0 +1,3 @@
+SRR2051516 ftp.sra.ebi.ac.uk/vol1/fastq/SRR205/006/SRR2051516/SRR2051516.fastq.gz
+SRR2051517 ftp.sra.ebi.ac.uk/vol1/fastq/SRR205/007/SRR2051517/SRR2051517.fastq.gz
+SRR2051518 ftp.sra.ebi.ac.uk/vol1/fastq/SRR205/008/SRR2051518/SRR2051518.fastq.gz

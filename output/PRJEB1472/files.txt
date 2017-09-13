@@ -1,0 +1,9 @@
+ERR231585 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231585/ERR231585.fastq.gz
+ERR231588 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231588/ERR231588.fastq.gz
+ERR231607 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231607/ERR231607.fastq.gz
+ERR231608 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231608/ERR231608.fastq.gz
+ERR231612 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231612/ERR231612.fastq.gz
+ERR231619 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231619/ERR231619.fastq.gz
+ERR231625 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231625/ERR231625.fastq.gz
+ERR231626 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231626/ERR231626.fastq.gz
+ERR231628 ftp.sra.ebi.ac.uk/vol1/fastq/ERR231/ERR231628/ERR231628.fastq.gz

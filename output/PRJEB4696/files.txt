@@ -1,0 +1,3 @@
+ERR695501 ftp.sra.ebi.ac.uk/vol1/fastq/ERR695/ERR695501/ERR695501.fastq.gz
+ERR695502 ftp.sra.ebi.ac.uk/vol1/fastq/ERR695/ERR695502/ERR695502.fastq.gz
+ERR695503 ftp.sra.ebi.ac.uk/vol1/fastq/ERR695/ERR695503/ERR695503.fastq.gz

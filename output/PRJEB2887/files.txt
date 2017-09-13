@@ -1,0 +1,16 @@
+ERR091506 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091506/ERR091506.fastq.gz
+ERR091507 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091507/ERR091507.fastq.gz
+ERR091508 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091508/ERR091508.fastq.gz
+ERR091509 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091509/ERR091509.fastq.gz
+ERR091510 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091510/ERR091510.fastq.gz
+ERR091511 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091511/ERR091511.fastq.gz
+ERR091512 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091512/ERR091512.fastq.gz
+ERR091513 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091513/ERR091513.fastq.gz
+ERR091514 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091514/ERR091514.fastq.gz
+ERR091515 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091515/ERR091515.fastq.gz
+ERR091516 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091516/ERR091516.fastq.gz
+ERR091517 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091517/ERR091517.fastq.gz
+ERR091518 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091518/ERR091518.fastq.gz
+ERR091519 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091519/ERR091519.fastq.gz
+ERR091520 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091520/ERR091520.fastq.gz
+ERR091521 ftp.sra.ebi.ac.uk/vol1/fastq/ERR091/ERR091521/ERR091521.fastq.gz

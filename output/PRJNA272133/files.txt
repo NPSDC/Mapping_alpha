@@ -1,0 +1,1 @@
+SRR1748013 ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/003/SRR1748013/SRR1748013.fastq.gz

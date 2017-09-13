@@ -1,0 +1,1 @@
+SRR5831017 ftp.sra.ebi.ac.uk/vol1/fastq/SRR583/007/SRR5831017/SRR5831017.fastq.gz

@@ -1,0 +1,12 @@
+ERR307344 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307344/ERR307344.fastq.gz
+ERR307345 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307345/ERR307345.fastq.gz
+ERR307346 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307346/ERR307346.fastq.gz
+ERR307347 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307347/ERR307347.fastq.gz
+ERR307348 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307348/ERR307348.fastq.gz
+ERR307349 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307349/ERR307349.fastq.gz
+ERR307350 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307350/ERR307350.fastq.gz
+ERR307351 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307351/ERR307351.fastq.gz
+ERR307352 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307352/ERR307352.fastq.gz
+ERR307353 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307353/ERR307353.fastq.gz
+ERR307354 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307354/ERR307354.fastq.gz
+ERR307355 ftp.sra.ebi.ac.uk/vol1/fastq/ERR307/ERR307355/ERR307355.fastq.gz

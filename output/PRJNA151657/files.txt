@@ -1,0 +1,13 @@
+SRR442113 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442113/SRR442113.fastq.gz
+SRR442114 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442114/SRR442114.fastq.gz
+SRR442115 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442115/SRR442115.fastq.gz
+SRR442116 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442116/SRR442116.fastq.gz
+SRR442117 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442117/SRR442117.fastq.gz
+SRR442119 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442119/SRR442119.fastq.gz
+SRR442120 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442120/SRR442120.fastq.gz
+SRR442121 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442121/SRR442121.fastq.gz
+SRR442122 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442122/SRR442122.fastq.gz
+SRR442123 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442123/SRR442123.fastq.gz
+SRR442124 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442124/SRR442124.fastq.gz
+SRR442125 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442125/SRR442125.fastq.gz
+SRR442126 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/SRR442126/SRR442126.fastq.gz

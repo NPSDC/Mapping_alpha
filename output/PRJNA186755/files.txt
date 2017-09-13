@@ -1,0 +1,14 @@
+SRR650331 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650331/SRR650331.fastq.gz
+SRR650332 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650332/SRR650332.fastq.gz
+SRR650333 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650333/SRR650333.fastq.gz
+SRR650334 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650334/SRR650334.fastq.gz
+SRR650335 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650335/SRR650335.fastq.gz
+SRR650336 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650336/SRR650336.fastq.gz
+SRR650337 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650337/SRR650337.fastq.gz
+SRR650338 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650338/SRR650338.fastq.gz
+SRR650339 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650339/SRR650339.fastq.gz
+SRR650340 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650340/SRR650340.fastq.gz
+SRR650341 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650341/SRR650341.fastq.gz
+SRR650342 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650342/SRR650342.fastq.gz
+SRR650343 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650343/SRR650343.fastq.gz
+SRR650344 ftp.sra.ebi.ac.uk/vol1/fastq/SRR650/SRR650344/SRR650344.fastq.gz

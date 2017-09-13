@@ -1,0 +1,1 @@
+SRR2922010 ftp.sra.ebi.ac.uk/vol1/fastq/SRR292/000/SRR2922010/SRR2922010.fastq.gz

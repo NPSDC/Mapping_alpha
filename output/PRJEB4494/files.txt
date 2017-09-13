@@ -1,0 +1,16 @@
+ERR329085 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329085/ERR329085.fastq.gz
+ERR329086 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329086/ERR329086.fastq.gz
+ERR329087 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329087/ERR329087.fastq.gz
+ERR329088 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329088/ERR329088.fastq.gz
+ERR329089 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329089/ERR329089.fastq.gz
+ERR329090 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329090/ERR329090.fastq.gz
+ERR329091 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329091/ERR329091.fastq.gz
+ERR329092 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329092/ERR329092.fastq.gz
+ERR329093 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329093/ERR329093.fastq.gz
+ERR329094 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329094/ERR329094.fastq.gz
+ERR329095 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329095/ERR329095.fastq.gz
+ERR329096 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329096/ERR329096.fastq.gz
+ERR329097 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329097/ERR329097.fastq.gz
+ERR329098 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329098/ERR329098.fastq.gz
+ERR329099 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329099/ERR329099.fastq.gz
+ERR329100 ftp.sra.ebi.ac.uk/vol1/fastq/ERR329/ERR329100/ERR329100.fastq.gz

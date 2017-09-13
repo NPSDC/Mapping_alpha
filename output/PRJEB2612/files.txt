@@ -1,0 +1,2 @@
+ERR039133 ftp.sra.ebi.ac.uk/vol1/fastq/ERR039/ERR039133/ERR039133.fastq.gz
+ERR039141 ftp.sra.ebi.ac.uk/vol1/fastq/ERR039/ERR039141/ERR039141.fastq.gz

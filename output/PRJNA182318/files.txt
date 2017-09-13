@@ -1,0 +1,3 @@
+SRR621138 ftp.sra.ebi.ac.uk/vol1/fastq/SRR621/SRR621138/SRR621138.fastq.gz
+SRR621139 ftp.sra.ebi.ac.uk/vol1/fastq/SRR621/SRR621139/SRR621139.fastq.gz
+SRR621140 ftp.sra.ebi.ac.uk/vol1/fastq/SRR621/SRR621140/SRR621140.fastq.gz

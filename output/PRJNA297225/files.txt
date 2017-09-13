@@ -1,0 +1,8 @@
+SRR2532557 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/007/SRR2532557/SRR2532557.fastq.gz
+SRR2532558 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/008/SRR2532558/SRR2532558.fastq.gz
+SRR2532559 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/009/SRR2532559/SRR2532559.fastq.gz
+SRR2532560 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/000/SRR2532560/SRR2532560.fastq.gz
+SRR2532561 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/001/SRR2532561/SRR2532561.fastq.gz
+SRR2532562 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/002/SRR2532562/SRR2532562.fastq.gz
+SRR2532563 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/003/SRR2532563/SRR2532563.fastq.gz
+SRR2532564 ftp.sra.ebi.ac.uk/vol1/fastq/SRR253/004/SRR2532564/SRR2532564.fastq.gz
