@@ -1,4 +1,6 @@
 #!/bin/bash
+
+###Aranges the file structure giving each study accession its own folder and then placing all run accession unders files .txt
 if [ -z $1 ]
 	then
 		echo "Please enter input file name"
