@@ -46,9 +46,9 @@ def get_counts(inp_file, genomic_array, valid_chroms, break_count):
 					counts += 1
 					break
 		total_reads += 1
-		if(total_reads%1e4 == 0):
-			print("Finished counting "+ str(int(total_reads/1e4)) )
-			print("So far " + str(float(counts)/total_reads * 100) + " Aligned")
+#		if(total_reads%1e4 == 0):
+#			print("Finished counting "+ str(int(total_reads/1e4)) )
+#			print("So far " + str(float(counts)/total_reads * 100) + " Aligned")
 		if(total_reads == break_count):
 			break
 	print(counts)
@@ -75,16 +75,17 @@ def main():
 	file_write = file_work.split('.')[0]+"_count.txt"
 	if(args.dest_file):
 		file_write = args.dest_file
-	print(file_write)
-	
+#	print(file_write)
+#	print(args.pickle_alpha)
 	genomic_array = pickle.load(open(args.pickle_alpha, "rb"))
 	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
 	count_reads = get_counts(file_work, genomic_array, valid_chroms, 1e5)
-	
+        acc = args.inp_file.split('.')[0].split('/')[-1]
+        print(acc)
 		
-	with open(file_write, 'w') as writ:
-		writ.write("Reads aligned to bam file : " + str(count_reads[0])+"\n"
-			   "Total Reads : " + str(count_reads[1]) + "\n")
+	with open(file_write, 'a') as writ:
+		writ.write("Accession Id :  " + acc + "\t" + "Reads aligned to bam file : " + str(count_reads[0]) + "\t" +
+			   "Total Reads : " + str(count_reads[1]) + "\t" + "%Aligned : " + str(float(count_reads[0])/count_reads[1] * 100) + "\n")
 
 	print("Finished counting")	
 	
