@@ -1,4 +1,2 @@
 SRR5196229 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/009/SRR5196229/SRR5196229.fastq.gz
 SRR5196230 ftp.sra.ebi.ac.uk/vol1/fastq/SRR519/000/SRR5196230/SRR5196230.fastq.gz
-SRR5196231 
-SRR5196232 

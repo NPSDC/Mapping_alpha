@@ -1,8 +1,6 @@
 ERR701453 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701453/ERR701453.fastq.gz
-ERR701454 
 ERR701455 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701455/ERR701455.fastq.gz
 ERR701458 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701458/ERR701458.fastq.gz
 ERR701460 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701460/ERR701460.fastq.gz
 ERR701461 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701461/ERR701461.fastq.gz
 ERR701465 ftp.sra.ebi.ac.uk/vol1/fastq/ERR701/ERR701465/ERR701465.fastq.gz
-ERR701466 

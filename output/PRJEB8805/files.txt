@@ -4,7 +4,6 @@ ERR789222 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789222/ERR789222.fastq.gz
 ERR789223 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789223/ERR789223.fastq.gz
 ERR789224 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789224/ERR789224.fastq.gz
 ERR789225 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789225/ERR789225.fastq.gz
-ERR789226 
 ERR789227 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789227/ERR789227.fastq.gz
 ERR789228 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789228/ERR789228.fastq.gz
 ERR789229 ftp.sra.ebi.ac.uk/vol1/fastq/ERR789/ERR789229/ERR789229.fastq.gz

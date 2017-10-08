@@ -79,7 +79,6 @@ SRR4026575 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/005/SRR4026575/SRR4026575.fastq.g
 SRR4026576 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/006/SRR4026576/SRR4026576.fastq.gz
 SRR4026577 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/007/SRR4026577/SRR4026577.fastq.gz
 SRR4026578 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/008/SRR4026578/SRR4026578.fastq.gz
-SRR4026579 
 SRR4026580 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/000/SRR4026580/SRR4026580.fastq.gz
 SRR4026581 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/001/SRR4026581/SRR4026581.fastq.gz
 SRR4026582 ftp.sra.ebi.ac.uk/vol1/fastq/SRR402/002/SRR4026582/SRR4026582.fastq.gz

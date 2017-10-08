@@ -10,7 +10,6 @@ SRR3586294 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/004/SRR3586294/SRR3586294.fastq.g
 SRR3586295 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/005/SRR3586295/SRR3586295.fastq.gz
 SRR3586296 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/006/SRR3586296/SRR3586296.fastq.gz
 SRR3586297 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/007/SRR3586297/SRR3586297.fastq.gz
-SRR3586298 
 SRR3586299 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/009/SRR3586299/SRR3586299.fastq.gz
 SRR3586300 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/000/SRR3586300/SRR3586300.fastq.gz
 SRR3586301 ftp.sra.ebi.ac.uk/vol1/fastq/SRR358/001/SRR3586301/SRR3586301.fastq.gz

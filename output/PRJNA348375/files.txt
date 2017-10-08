@@ -1,6 +1,5 @@
 SRR4422885 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/005/SRR4422885/SRR4422885.fastq.gz
 SRR4422886 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/006/SRR4422886/SRR4422886.fastq.gz
-SRR4422887 
 SRR4422888 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/008/SRR4422888/SRR4422888.fastq.gz
 SRR4422889 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/009/SRR4422889/SRR4422889.fastq.gz
 SRR4422890 ftp.sra.ebi.ac.uk/vol1/fastq/SRR442/000/SRR4422890/SRR4422890.fastq.gz

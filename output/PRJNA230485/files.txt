@@ -1,2 +1,1 @@
-SRR1041874 
 SRR1041875 ftp.sra.ebi.ac.uk/vol1/fastq/SRR104/005/SRR1041875/SRR1041875.fastq.gz

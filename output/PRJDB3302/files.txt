@@ -4,9 +4,7 @@ DRR024686 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024686/DRR024686.fastq.gz
 DRR024687 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024687/DRR024687.fastq.gz
 DRR024688 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024688/DRR024688.fastq.gz
 DRR024689 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024689/DRR024689.fastq.gz
-DRR024690 
 DRR024691 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024691/DRR024691.fastq.gz
 DRR024692 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024692/DRR024692.fastq.gz
-DRR024693 
 DRR024694 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024694/DRR024694.fastq.gz
 DRR024695 ftp.sra.ebi.ac.uk/vol1/fastq/DRR024/DRR024695/DRR024695.fastq.gz

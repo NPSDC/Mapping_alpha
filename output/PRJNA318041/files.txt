@@ -5,8 +5,6 @@ SRR3356456 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/006/SRR3356456/SRR3356456.fastq.g
 SRR3356457 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/007/SRR3356457/SRR3356457.fastq.gz
 SRR3356458 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/008/SRR3356458/SRR3356458.fastq.gz
 SRR3356459 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/009/SRR3356459/SRR3356459.fastq.gz
-SRR3356460 
 SRR3356461 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/001/SRR3356461/SRR3356461.fastq.gz
 SRR3356462 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/002/SRR3356462/SRR3356462.fastq.gz
 SRR3356463 ftp.sra.ebi.ac.uk/vol1/fastq/SRR335/003/SRR3356463/SRR3356463.fastq.gz
-SRR3356464 

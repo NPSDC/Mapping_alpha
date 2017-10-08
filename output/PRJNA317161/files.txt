@@ -5,7 +5,6 @@ SRR3321916 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/006/SRR3321916/SRR3321916.fastq.g
 SRR3321917 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/007/SRR3321917/SRR3321917.fastq.gz
 SRR3321918 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/008/SRR3321918/SRR3321918.fastq.gz
 SRR3321919 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/009/SRR3321919/SRR3321919.fastq.gz
-SRR3321920 
 SRR3321921 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/001/SRR3321921/SRR3321921.fastq.gz
 SRR3321922 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/002/SRR3321922/SRR3321922.fastq.gz
 SRR3321923 ftp.sra.ebi.ac.uk/vol1/fastq/SRR332/003/SRR3321923/SRR3321923.fastq.gz

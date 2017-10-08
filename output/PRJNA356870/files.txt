@@ -12,9 +12,7 @@ SRR5322141 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/001/SRR5322141/SRR5322141.fastq.g
 SRR5322142 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/002/SRR5322142/SRR5322142.fastq.gz
 SRR5322143 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/003/SRR5322143/SRR5322143.fastq.gz
 SRR5322144 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/004/SRR5322144/SRR5322144.fastq.gz
-SRR5322145 
 SRR5322146 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/006/SRR5322146/SRR5322146.fastq.gz
-SRR5322147 
 SRR5322148 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/008/SRR5322148/SRR5322148.fastq.gz
 SRR5322149 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/009/SRR5322149/SRR5322149.fastq.gz
 SRR5322150 ftp.sra.ebi.ac.uk/vol1/fastq/SRR532/000/SRR5322150/SRR5322150.fastq.gz

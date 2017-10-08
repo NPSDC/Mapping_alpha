@@ -3,4 +3,3 @@ SRR5061831 ftp.sra.ebi.ac.uk/vol1/fastq/SRR506/001/SRR5061831/SRR5061831.fastq.g
 SRR5061832 ftp.sra.ebi.ac.uk/vol1/fastq/SRR506/002/SRR5061832/SRR5061832.fastq.gz
 SRR5061833 ftp.sra.ebi.ac.uk/vol1/fastq/SRR506/003/SRR5061833/SRR5061833.fastq.gz
 SRR5061834 ftp.sra.ebi.ac.uk/vol1/fastq/SRR506/004/SRR5061834/SRR5061834.fastq.gz
-SRR5061835 

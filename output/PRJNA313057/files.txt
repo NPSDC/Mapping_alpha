@@ -1,3 +1,2 @@
 SRR3185108 ftp.sra.ebi.ac.uk/vol1/fastq/SRR318/008/SRR3185108/SRR3185108.fastq.gz
 SRR3185109 ftp.sra.ebi.ac.uk/vol1/fastq/SRR318/009/SRR3185109/SRR3185109.fastq.gz
-SRR3185110 

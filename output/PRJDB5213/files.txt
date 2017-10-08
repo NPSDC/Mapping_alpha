@@ -2,7 +2,5 @@ DRR075358 ftp.sra.ebi.ac.uk/vol1/fastq/DRR075/DRR075358/DRR075358.fastq.gz
 DRR075359 ftp.sra.ebi.ac.uk/vol1/fastq/DRR075/DRR075359/DRR075359.fastq.gz
 DRR075360 ftp.sra.ebi.ac.uk/vol1/fastq/DRR075/DRR075360/DRR075360.fastq.gz
 DRR075361 ftp.sra.ebi.ac.uk/vol1/fastq/DRR075/DRR075361/DRR075361.fastq.gz
-DRR097263 
 DRR097264 ftp.sra.ebi.ac.uk/vol1/fastq/DRR097/DRR097264/DRR097264.fastq.gz
 DRR097265 ftp.sra.ebi.ac.uk/vol1/fastq/DRR097/DRR097265/DRR097265.fastq.gz
-DRR097266 

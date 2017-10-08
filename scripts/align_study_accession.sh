@@ -32,16 +32,18 @@ do
     bam_file="$study_directory/$file_acc.bam"
 #    echo "$study_directory/$file_acc.fastq.gz"
 #    echo "Bam File $bam_file"
-    wget -O "$study_directory/$file_acc.fastq.gz" $url & $PIDWGET=$!
-    sleep 15
-    bowtie2  -p 18 -x "$2/GRCh38" -U  "$study_directory/$file_acc.fastq.gz" | samtools view -bS - > $bam_file & $PIDBOW=$!
-    wait $PIDWGET
-    wait $PIDBOW
-    python $4 --file $bam_file --p_alr_align "$3/gen_array.pickle" --p_valid_chrom "$3/valid_chroms.pickle" --dest_file "$study_directory/alignment.txt"
-    rm -r $bam_file "$study_directory/$file_acc.fastq.gz"
-#    count=$(($count+1))
-    if [ $count == 5 ]
-         then
-	     exit
+    wget -q --spider $url
+    if [ $? -eq 0 ]
+	then
+	    wget -O "$study_directory/$file_acc.fastq.gz" $url & $PIDWGET=$!
+	    sleep 15
+	    bowtie2  -p 18 -x "$2/GRCh38" -U  "$study_directory/$file_acc.fastq.gz" | samtools view -bS - > $bam_file & $PIDBOW=$!
+	    wait $PIDWGET
+	    wait $PIDBOW
+    	    python $4 --file $bam_file --p_alr_align "$3/gen_array.pickle" --p_valid_chrom "$3/valid_chroms.pickle" --dest_file "$study_directory/alignment.txt"
+	    rm -r $bam_file "$study_directory/$file_acc.fastq.gz"
+    else
+    echo "$study_directory/alignment.txt" >> $file_acc "fastq file cant be downloaded with url $url" 
     fi
+#    count=$(($count+1))
 done < $file_ids

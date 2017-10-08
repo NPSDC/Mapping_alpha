@@ -1,4 +1,2 @@
 SRR5814943 ftp.sra.ebi.ac.uk/vol1/fastq/SRR581/003/SRR5814943/SRR5814943.fastq.gz
-SRR5814944 
-SRR5814945 
 SRR5814946 ftp.sra.ebi.ac.uk/vol1/fastq/SRR581/006/SRR5814946/SRR5814946.fastq.gz

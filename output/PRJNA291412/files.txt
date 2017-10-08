@@ -20,7 +20,6 @@ SRR2133473 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/003/SRR2133473/SRR2133473.fastq.g
 SRR2133474 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/004/SRR2133474/SRR2133474.fastq.gz
 SRR2133475 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/005/SRR2133475/SRR2133475.fastq.gz
 SRR2133476 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/006/SRR2133476/SRR2133476.fastq.gz
-SRR2133477 
 SRR2133478 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/008/SRR2133478/SRR2133478.fastq.gz
 SRR2133479 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/009/SRR2133479/SRR2133479.fastq.gz
 SRR2133480 ftp.sra.ebi.ac.uk/vol1/fastq/SRR213/000/SRR2133480/SRR2133480.fastq.gz

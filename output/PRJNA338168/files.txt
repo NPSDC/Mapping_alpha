@@ -1,4 +1,3 @@
-SRR4011721 
 SRR4011722 ftp.sra.ebi.ac.uk/vol1/fastq/SRR401/002/SRR4011722/SRR4011722.fastq.gz
 SRR4011723 ftp.sra.ebi.ac.uk/vol1/fastq/SRR401/003/SRR4011723/SRR4011723.fastq.gz
 SRR4011724 ftp.sra.ebi.ac.uk/vol1/fastq/SRR401/004/SRR4011724/SRR4011724.fastq.gz
