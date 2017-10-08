@@ -3,8 +3,24 @@ import os
 ###Just tester function checking counts
 
 def get_counts_file(file):
-	with open(file) as f:
+	with open(file, 'r') as f:
 		return sum(1 for _ in f)
+
+def map_ids(align_file, run_acc_file):
+	align_ids = list()
+	run_acc_ids = list()
+	with open(align_file, 'r') as f:
+		for line in f.readlines():
+			align_ids.append(line.split('\t')[0].split(':')[1].strip())
+
+	with open(run_acc_file, 'r') as f:
+		for line in f.readlines():
+			run_acc_ids.append(line.split(' ')[1].strip())
+
+	print(align_ids)
+	print(run_acc_ids)
+	print(set(align_ids))
+	print(set(run_acc_ids))
 
 def get_study_acc_counts(study_acc):
 	run_acc_file = os.path.join(study_acc, 'files.txt')

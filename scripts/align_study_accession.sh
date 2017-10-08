@@ -43,7 +43,7 @@ do
     	    python $4 --file $bam_file --p_alr_align "$3/gen_array.pickle" --p_valid_chrom "$3/valid_chroms.pickle" --dest_file "$study_directory/alignment.txt"
 	    rm -r $bam_file "$study_directory/$file_acc.fastq.gz"
     else
-    echo "$study_directory/alignment.txt" >> $file_acc "fastq file cant be downloaded with url $url" 
+    echo "$study_directory/alignment.txt" >>" Accession Id :  $file_acc"  $'\t'" fastq file cant be downloaded with url $url" 
     fi
 #    count=$(($count+1))
 done < $file_ids
