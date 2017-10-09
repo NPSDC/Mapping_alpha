@@ -15,23 +15,22 @@ def map_ids(align_file, run_acc_file):
 
 	with open(run_acc_file, 'r') as f:
 		for line in f.readlines():
-			run_acc_ids.append(line.split(' ')[1].strip())
-
-	print(align_ids)
-	print(run_acc_ids)
-	print(set(align_ids))
-	print(set(run_acc_ids))
+			run_acc_ids.append(line.split(' ')[0].strip())
+        return(len(list(set(align_ids) & set(run_acc_ids))))
 
 def get_study_acc_counts(study_acc):
 	run_acc_file = os.path.join(study_acc, 'files.txt')
 	align_file = os.path.join(study_acc, 'alignment.txt')
 	file_count = 'not there'
 	align_count = 'not there'
+        mapped = 'not there'
+        req_acc = study_acc.split('/')[-1].strip()
 	if(os.path.exists(run_acc_file)):
 		file_count = get_counts_file(run_acc_file)
-	if(os.path.exists(align_file)):
-		align_count = get_counts_file(align_file)
-	print(study_acc+"\t"+str(file_count)+"\t"+str(align_count))
+        	if(os.path.exists(align_file)):
+                    align_count = get_counts_file(align_file)
+                    mapped = map_ids(align_file, run_acc_file)
+	print('Study Ids : ' + req_acc + "\t" + 'File Ids : ' + str(file_count)+ "\t" + 'Align Ids : ' + str(align_count) + "\t" + 'Mapped : ' + str(mapped))
 
 def loop_files(file_path, acc_path):
         with open(file_path) as f:
