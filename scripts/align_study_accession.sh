@@ -35,7 +35,7 @@ do
     wget -q --spider $url
     if [ $? -eq 0 ]
 	then
-	    wget -O "$study_directory/$file_acc.fastq.gz" $url & $PIDWGET=$!
+	    wget -O "ftp://$study_directory/$file_acc.fastq.gz" $url & $PIDWGET=$!
 	    sleep 15
 	    bowtie2  -p 18 -x "$2/GRCh38" -U  "$study_directory/$file_acc.fastq.gz" | samtools view -bS - > $bam_file & $PIDBOW=$!
 	    wait $PIDWGET
@@ -43,7 +43,7 @@ do
     	    python $4 --file $bam_file --p_alr_align "$3/gen_array.pickle" --p_valid_chrom "$3/valid_chroms.pickle" --dest_file "$study_directory/alignment.txt"
 	    rm -r $bam_file "$study_directory/$file_acc.fastq.gz"
     else
-    echo "$study_directory/alignment.txt" >>" Accession Id :  $file_acc"  $'\t'" fastq file cant be downloaded with url $url" 
+    echo  " Accession Id :  $file_acc"  $'\t'" fastq file cant be downloaded with url $url" >> "$study_directory/alignment.txt"
     fi
 #    count=$(($count+1))
 done < $file_ids
