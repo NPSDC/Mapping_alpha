@@ -82,7 +82,7 @@ def main():
 	count_reads = get_counts(file_work, genomic_array, valid_chroms, 1e5)
         acc = args.inp_file.split('.')[0].split('/')[-1]
         print(acc)
-	if(count_reads[1] != 0 ):
+	if(count_reads[1] >= 1e5):
             with open(file_write, 'a') as writ:
                     writ.write("Accession Id :  " + acc + "\t" + "Reads aligned to bam file : " + str(count_reads[0]) + "\t" +
                                "Total Reads : " + str(count_reads[1]) + "\t" + "%Aligned : " + str(float(count_reads[0])/count_reads[1] * 100) + "\n")
