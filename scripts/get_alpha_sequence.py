@@ -15,14 +15,14 @@ def get_alpha_align(inp_file):
 	with open(inp_file, 'r') as csvfile:
 		seq = csv.reader(csvfile, delimiter = '\t')
 		for row in seq:
-			chrom = re.sub('\w+_','',re.sub('(_alt|_random|\n?)', '', re.sub('^chr','',re.sub('v', '.', row[5]))))
+			chrom = re.sub('\w+_','',re.sub('(_alt|_random|\n?)', '', re.sub('^chr','',re.sub('v', '.', row[5])))) ##Extracting chrom name without chr and other info so that it maps with the SAM/BAM file output
 			if chrom not in valid_chroms:
 				valid_chroms.append(chrom)
-			if(row[10] == 'ALR/Alpha'):
+			if(row[10] == 'ALR/Alpha' or row[10] == 'GSAT' or row[10] == 'GSATII' or row[10] == 'GSATX' or row[10] == 'HSAT4' or row[10] == 'SST1'):  ##all the repeat sequences in centromere
 				gi = HT.GenomicInterval(chrom, int(row[6]), int(row[7]), row[9])
 				ga[gi] = True
 	pickle.dump(ga, open(os.path.join(os.getcwd(),'gen_array.pickle'), "wb"))
-	pickle.dump(valid_chroms, open(os.path.join(os.getcwd(), 'valid_chromes.pickle'), "wb"))
+	pickle.dump(valid_chroms, open(os.path.join(os.getcwd(), 'valid_chroms.pickle'), "wb"))
 
 def main():
 	parser = ag.ArgumentParser(description = "file parser")

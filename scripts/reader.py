@@ -51,8 +51,8 @@ def get_counts(inp_file, genomic_array, valid_chroms, break_count):
 #			print("So far " + str(float(counts)/total_reads * 100) + " Aligned")
 		if(total_reads == break_count):
 			break
-	print(counts)
-	print(total_reads)
+	print('\t\t##### '+ str(counts))
+	print('\t\t#####'+ str(total_reads))
 	return [counts, total_reads]
 		
 
@@ -81,7 +81,7 @@ def main():
 	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
 	count_reads = get_counts(file_work, genomic_array, valid_chroms, 1e5)
         acc = args.inp_file.split('.')[0].split('/')[-1]
-        print(acc)
+#        print(acc)
 	if(count_reads[1] >= 1e5):
             with open(file_write, 'a') as writ:
                     writ.write("Accession Id :  " + acc + "\t" + "Reads aligned to bam file : " + str(count_reads[0]) + "\t" +
@@ -90,7 +90,7 @@ def main():
             with open(file_write, 'a') as writ:
                     writ.write("Accession Id :  " + acc + "\t" + "Reads aligned to bam file : " + str(count_reads[0]) + "\t" +
                                "Total Reads : " + str(count_reads[1]) + "\t" + "%Aligned : " + "NA" + "\n")
-	print("Finished counting")	
+	print("\t\t##### Finished counting\n")	
 	
 	
 if __name__ == '__main__':
