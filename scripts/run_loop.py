@@ -1,15 +1,25 @@
 import argparse as ag
 import os
 import subprocess
+import time
+from joblib import Parallel, delayed
 
-def set_loops(args):
-	with open(args.inp_file, 'r') as f:
-		for line in f.readlines():
-			study_acc = line.strip():
+def run_proc(line, args):
+			study_acc = line.strip()
 			study_path=os.path.join(args.acc_dir,study_acc)
 			if(os.path.exists(study_path)):
 				subprocess.call(['python',  args.align_py, '--study_acc', study_path, '--ind_files', args.ind_files,
-				'--Pi', args.pi_dir, '--reader_path', args.read_path])
+				'--Pi', args.pi_dir, '--reader_path', args.read_path], stderr = open('er_cum', 'a'))
+			else:
+				print(study_path + " not found")
+
+def set_loop(args):
+    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'
+    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
+    start = time.time()
+    with open(args.inp_file, 'r') as f:
+                Parallel(n_jobs=16)(delayed(run_proc)(line=line, args=args) for line in f.readlines())
+    print time.time() - start
 
 def main():
 	parser = ag.ArgumentParser(description = "file parser")
@@ -34,7 +44,7 @@ def main():
 	if(not os.path.exists(args.read_path)):
 		raise FileNotFoundError('Invalid path for reader.py')
     
-    set_loop(args)
+	set_loop(args)
 
 if __name__ == '__main__':
 	main()
