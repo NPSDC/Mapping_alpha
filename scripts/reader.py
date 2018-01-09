@@ -77,7 +77,7 @@ def main():
 		file_write = args.dest_file
 #	print(file_write)
 #	print(args.pickle_alpha)
-	break_count = 1e5
+	break_count = 1e6
 	genomic_array = pickle.load(open(args.pickle_alpha, "rb"))
 	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
 	count_reads = get_counts(file_work, genomic_array, valid_chroms, break_count)
@@ -90,7 +90,7 @@ def main():
         else:
             with open(file_write, 'a') as writ:
                     writ.write("Accession Id :  " + acc + "\t" + "Reads aligned to bam file : " + str(count_reads[0]) + "\t" +
-                               "Total Reads : " + str(count_reads[1]) + "\t" + "%Aligned : " + "NA" + "\n")
+                               "Total Reads : " + str(count_reads[1]) + "\t" + "%Aligned : " + str(float(count_reads[0])/count_reads[1] * 100)+" not reaching limit" + "\n")
 	print("\t\t##### Finished counting\n")	
 	
 	
