@@ -6,40 +6,42 @@ import subprocess
 
 def align_run(run_sra_id, ind_dir):
         f=open('er_'+run_sra_id,'w')
-        err_sra = subprocess.call(['fastq-dump', '--skip-technical',  '--readids', '--read-filter', 'pass', '--dumpbase', '--split-3', '-N', '100000', '-X', '1500000', '--clip', run_sra_id], stderr = f )
+        err_sra = subprocess.call(['fastq-dump', '--skip-technical',  '--readids', '--read-filter', 'pass', '--dumpbase', '--split-3', '-N', '10000', '-X', '200000', '--clip', run_sra_id], stderr = f )
         f.close()
         err_bow = 0
         if(err_sra != 0):
+                if(os.path.exists(run_sra_id+'.sam')):
+                    subprocess.call(['rm', run_sra_id+'.sam'])
                 return([1,0])
-#        if(not os.path.exists(run_sra_id+'_pass.fastq')):
- #               return([-1,-1])
-        if(not os.path.exists(run_sra_id+'_pass_1.fastq') or not os.path.exists(run_sra_id+'_pass_2.fastq')) :
-               return([-1,-1])
+        if(not os.path.exists(run_sra_id+'_pass.fastq')):
+                return([-1,-1])
+#        if(not os.path.exists(run_sra_id+'_pass_1.fastq') or not os.path.exists(run_sra_id+'_pass_2.fastq')) :
+#               return([-1,-1])
         if(err_sra == 0):
                 f=open('er_'+run_sra_id,'w')
                 s=open(run_sra_id+'.sam', 'w')
-                #err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
-                 #   stdout = s)
-                err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
-                 run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
+                err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
+                    stdout = s)
+                #err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
+                # run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
                 f.close()
                 s.close()
                 if(err_bow != 0):
                         err_bow = 1
-                        #subprocess.call(['rm', run_sra_id+'_pass.fastq'])
-                        subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq'])
+                        subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                        #subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq'])
                         if(os.path.exists(run_sra_id+'.sam')):
                             subprocess.call(['rm', run_sra_id+'.sam'])
         return([err_sra, err_bow])        
 
 def align_study(args):
         print('Started on study accession ' + args.study_acc)
+        align_file = os.path.join(args.study_acc, 'alignment_new.txt')
         with open(os.path.join(args.study_acc, 'files.txt'), 'r') as f_study:
                 for l in f_study.readlines():
                     sra_id = l.strip()
                     print('\t\t##### ' + sra_id) 
                     err = align_run(sra_id, args.ind_files)
-                    align_file = os.path.join(args.study_acc, 'alignment_new.txt')
                     if(err[0] == -1 and err[1] == -1):
                         with open(align_file, 'a') as f_write:
                                f_write.write(sra_id + "_pass.fastq doesn't exist\n")
@@ -60,11 +62,12 @@ def align_study(args):
                         read_align = subprocess.call(['python', args.read_path, '--file', sra_id+'.sam', '--p_alr_align', args.pi_dir+"/gen_array.pickle", "--p_valid_chrom", args.pi_dir+"/valid_chroms.pickle", "--dest_file", align_file], stderr = f)
                         f.close()
                         if(read_align != 0):
-                            with open('er_'+sra_id, 'r') as err:
-                                f_write.write(sra_id + "\t" +  err.readlines()[0])
+                            with open(align_file, 'a') as f_write:
+                                with open('er_'+sra_id, 'r') as err:
+                                    f_write.write(sra_id + "\t" +  err.readlines()[0])
                             print('\t\t' + sra_id + ' ##### Unsuccessful in reader\n')
-                        #subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
-                        subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
+                        subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
+                        #subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
                             
                     subprocess.call(['rm','er_'+sra_id])
 #        os.system('ls')

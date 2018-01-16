@@ -77,7 +77,7 @@ def main():
 		file_write = args.dest_file
 #	print(file_write)
 #	print(args.pickle_alpha)
-	break_count = 1e6
+	break_count = 1e5
 	genomic_array = pickle.load(open(args.pickle_alpha, "rb"))
 	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
 	count_reads = get_counts(file_work, genomic_array, valid_chroms, break_count)
