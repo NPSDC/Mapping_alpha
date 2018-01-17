@@ -10,14 +10,17 @@ def align_run(run_sra_id, ind_dir):
         f.close()
         err_bow = 0
         if(err_sra != 0):
-                if(os.path.exists(run_sra_id+'.sam')):
-                    subprocess.call(['rm', run_sra_id+'.sam'])
-                return([1,0])
-        if(not os.path.exists(run_sra_id+'_pass.fastq')):
-                return([-1,-1])
+                err_sra = 1
+                if(os.path.exists(run_sra_id+'_pass.fastq')):
+                    subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+ #               if(os.path.exists(run_sra_id+'.sam')):
+  #                  subprocess.call(['rm', run_sra_id+'.sam'])
+#                return([-1,-1])
+#        if(not os.path.exists(run_sra_id+'_pass.fastq')):
+#                return([-1,-1])
 #        if(not os.path.exists(run_sra_id+'_pass_1.fastq') or not os.path.exists(run_sra_id+'_pass_2.fastq')) :
 #               return([-1,-1])
-        if(err_sra == 0):
+        else:
                 f=open('er_'+run_sra_id,'w')
                 s=open(run_sra_id+'.sam', 'w')
                 err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
@@ -42,17 +45,20 @@ def align_study(args):
                     sra_id = l.strip()
                     print('\t\t##### ' + sra_id) 
                     err = align_run(sra_id, args.ind_files)
-                    if(err[0] == -1 and err[1] == -1):
+                    if(err[0] == 1):
                         with open(align_file, 'a') as f_write:
-                               f_write.write(sra_id + "_pass.fastq doesn't exist\n")
-                        print('\t\t' + sra_id + ' ##### Unsuccessful file not found\n')
-                        continue
-                    if(err[0] == 1 or err[1] == 1):
+                            with open('er_'+sra_id, 'r') as err:
+                                m=err.readlines()[0]
+                                f_write.write(sra_id + m + "_pass.fastq couldn't be downloaded properly\n")
+                        print('\t\t' + sra_id + ' ##### Unsuccessful fastq\n')                            
+#                        subprocess.call(['rm','er_'+sra_id])
+#                        continue
+                    elif(err[1] == 1):
                         #subprocess.call(['cat', 'er'])
                         with open(align_file, 'a') as f_write:
                             with open('er_'+sra_id, 'r') as err:
                                 f_write.write(sra_id + "\t" + err.readlines()[0] + "\n")
-                        print('\t\t' + sra_id + ' ##### Unsuccessful in bow or fastq\n')
+                        print('\t\t' + sra_id + ' ##### Unsuccessful in bowtie\n')
 #                    elif(err[1] == 1):
 #                        with open(align_file, 'a') as f_write:
 #                            with open('er', 'r') as err:
