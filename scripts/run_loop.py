@@ -18,7 +18,7 @@ def set_loop(args):
     os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
     start = time.time()
     with open(args.inp_file, 'r') as f:
-                Parallel(n_jobs=1)(delayed(run_proc)(line=line, args=args) for line in f.readlines())
+                Parallel(n_jobs=10)(delayed(run_proc)(line=line, args=args) for line in f.readlines())
     print time.time() - start
 
 def main():
