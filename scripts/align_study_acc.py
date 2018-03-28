@@ -11,9 +11,13 @@ def align_run(run_sra_id, ind_dir):
 #        err_bow = 0
         if(err != 0):
                 err = 1
-                if(os.path.exists(run_sra_id+'_pass.fastq')):
-                    subprocess.call(['rm', run_sra_id+'_pass.fastq'])
- #               if(os.path.exists(run_sra_id+'.sam')):
+#                if(os.path.exists(run_sra_id+'_pass.fastq')):
+#                    subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                if(os.path.exists(run_sra_id+'_pass_1.fastq')):
+                    subprocess.call(['rm', run_sra_id+'_pass_1.fastq'])
+                if(os.path.exists(run_sra_id+'_pass_2.fastq')):
+                    subprocess.call(['rm', run_sra_id+'_pass_2.fastq'])
+#               if(os.path.exists(run_sra_id+'.sam')):
   #                  subprocess.call(['rm', run_sra_id+'.sam'])
 #                return([-1,-1])
 #        if(not os.path.exists(run_sra_id+'_pass.fastq')):
@@ -21,21 +25,22 @@ def align_run(run_sra_id, ind_dir):
 #        if(not os.path.exists(run_sra_id+'_pass_1.fastq') or not os.path.exists(run_sra_id+'_pass_2.fastq')) :
 #               return([-1,-1])
         else:
-                if(not os.path.exists(run_sra_id+'_pass.fastq')):
-                    err = 1
+#                if(not os.path.exists(run_sra_id+'_pass.fastq')):
+                if not (os.path.exists(run_sra_id+'_pass_1.fastq') and os.path.exists(run_sra_id+'_pass_2.fastq')) :
+                    err = 3
                     return(err)
                 f=open('er_'+run_sra_id,'w')
                 s=open(run_sra_id+'.sam', 'w')
-                err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
-                    stdout = s)
-                #err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
-                # run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
+#                err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
+#                   stdout = s)
+                err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
+                 run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
                 f.close()
                 s.close()
                 if(err != 0):
                         err = 2
-                        subprocess.call(['rm', run_sra_id+'_pass.fastq'])
-                        #subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq'])
+#                        subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                        subprocess.call(['rm', run_sra_id+'_pass_1.fastq', run_sra_id+'_pass_2.fastq'])
                         if(os.path.exists(run_sra_id+'.sam')):
                             subprocess.call(['rm', run_sra_id+'.sam'])
         return(err)        
@@ -43,6 +48,7 @@ def align_run(run_sra_id, ind_dir):
 def align_study(args):
         print('Started on study accession ' + args.study_acc)
         align_file = os.path.join(args.study_acc, 'alignment_new.txt')
+        not_downloaded=[]
         with open(os.path.join(args.study_acc, 'files.txt'), 'r') as f_study:
                 for l in f_study.readlines():
                     sra_id = l.strip()
@@ -56,8 +62,9 @@ def align_study(args):
                                     m=''
                                 else:
                                     m=m[0]
-                                f_write.write(sra_id + m + "_pass.fastq couldn't be downloaded properly\n")
-                        print('\t\t' + sra_id + ' ##### Unsuccessful fastq\n')                            
+                                f_write.write(sra_id + m + "fastq couldn't be downloaded properly\n")
+                        print('\t\t' + sra_id + ' ##### Unsuccessful fastq\n')
+                        not_downloaded.append(sra_id)                            
 #                        subprocess.call(['rm','er_'+sra_id])
 #                        continue
                     elif(err_flag == 2):
@@ -66,6 +73,11 @@ def align_study(args):
                             with open('er_'+sra_id, 'r') as er:
                                 f_write.write(sra_id + "\t" + er.readlines()[0] + "\n")
                         print('\t\t' + sra_id + ' ##### Unsuccessful in bowtie\n')
+                    elif(err_flag == 3):
+                        with open(align_file, 'a') as f_write:
+                            f_write.write(sra_id + " fastq poor reads" + "\n")
+                        print('\t\t' + sra_id + ' ##### Poor Reads\n')                            
+
 #                    elif(err[1] == 1):
 #                        with open(align_file, 'a') as f_write:
 #                            with open('er', 'r') as err:
@@ -79,10 +91,15 @@ def align_study(args):
                                 with open('er_'+sra_id, 'r') as er:
                                     f_write.write(sra_id + "\t" +  er.readlines()[0])
                             print('\t\t' + sra_id + ' ##### Unsuccessful in reader\n')
-                        subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
-                        #subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
+                        #subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
+                        subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
                             
                     subprocess.call(['rm','er_'+sra_id])
+        if(not_downloaded):
+            not_down_file = os.path.join(args.study_acc, 'not_downloaded.txt')
+            with open(not_down_file, 'w') as f_not_down:
+                for sra in not_downloaded:
+                    f_not_down.write("%s\n" % sra)
 #        os.system('ls')
 
 def main():
