@@ -4,45 +4,47 @@ import subprocess
 
 ####pythonic implementation of align_study_accession.sh
 
-def align_run(run_sra_id, ind_dir):
+def align_run(run_sra_id, ind_dir, paired):
         f=open('er_'+run_sra_id,'w')
         err = subprocess.call(['fastq-dump', '--skip-technical',  '--readids', '--read-filter', 'pass', '--dumpbase', '--split-3', '-N', '10000', '-X', '200000', '--clip', run_sra_id], stderr = f )
         f.close()
 #        err_bow = 0
         if(err != 0):
                 err = 1
-#                if(os.path.exists(run_sra_id+'_pass.fastq')):
-#                    subprocess.call(['rm', run_sra_id+'_pass.fastq'])
-                if(os.path.exists(run_sra_id+'_pass_1.fastq')):
-                    subprocess.call(['rm', run_sra_id+'_pass_1.fastq'])
-                if(os.path.exists(run_sra_id+'_pass_2.fastq')):
-                    subprocess.call(['rm', run_sra_id+'_pass_2.fastq'])
-#               if(os.path.exists(run_sra_id+'.sam')):
-  #                  subprocess.call(['rm', run_sra_id+'.sam'])
-#                return([-1,-1])
-#        if(not os.path.exists(run_sra_id+'_pass.fastq')):
-#                return([-1,-1])
-#        if(not os.path.exists(run_sra_id+'_pass_1.fastq') or not os.path.exists(run_sra_id+'_pass_2.fastq')) :
-#               return([-1,-1])
+                if(not paired):
+                    if(os.path.exists(run_sra_id+'_pass.fastq')):
+                       subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                else:
+                    if(os.path.exists(run_sra_id+'_pass_1.fastq')):
+                        subprocess.call(['rm', run_sra_id+'_pass_1.fastq'])
+                    if(os.path.exists(run_sra_id+'_pass_2.fastq')):
+                        subprocess.call(['rm', run_sra_id+'_pass_2.fastq'])
+
         else:
-#                if(not os.path.exists(run_sra_id+'_pass.fastq')):
-                if not (os.path.exists(run_sra_id+'_pass_1.fastq') and os.path.exists(run_sra_id+'_pass_2.fastq')) :
-                    err = 3
-                    return(err)
                 f=open('er_'+run_sra_id,'w')
                 s=open(run_sra_id+'.sam', 'w')
-#                err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
-#                   stdout = s)
-                err_bow = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
+                if(not paired):
+                    if(not os.path.exists(run_sra_id+'_pass.fastq')):
+                        err = 3
+                        return(err)
+                    err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
+                  stdout = s)
+
+                else:
+                    if not (os.path.exists(run_sra_id+'_pass_1.fastq') and os.path.exists(run_sra_id+'_pass_2.fastq')) :
+                        err = 3
+                        return(err)
+                    err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
                  run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
                 f.close()
                 s.close()
                 if(err != 0):
-                        err = 2
-#                        subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                    err = 2
+                    if(not paired):
+                        subprocess.call(['rm', run_sra_id+'_pass.fastq'])
+                    else:
                         subprocess.call(['rm', run_sra_id+'_pass_1.fastq', run_sra_id+'_pass_2.fastq'])
-                        if(os.path.exists(run_sra_id+'.sam')):
-                            subprocess.call(['rm', run_sra_id+'.sam'])
+                
         return(err)        
 
 def align_study(args):
@@ -53,7 +55,7 @@ def align_study(args):
                 for l in f_study.readlines():
                     sra_id = l.strip()
                     print('\t\t##### ' + sra_id) 
-                    err_flag = align_run(sra_id, args.ind_files)
+                    err_flag = align_run(sra_id, args.ind_files, args.paired)
                     if(err_flag == 1):
                         with open(align_file, 'a') as f_write:
                             with open('er_'+sra_id, 'r') as er:
@@ -108,6 +110,7 @@ def main():
 	parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
 	parser.add_argument('--Pi', metavar = 'pi', required = True, dest = 'pi_dir', help = 'Directory containing pickled files')
 	parser.add_argument('--reader_path', metavar = 'reader_path', required = True, dest = 'read_path', help = 'Reader.py path')
+    parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
 	args = parser.parse_args()
 	os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'	    
 	os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
@@ -120,7 +123,7 @@ def main():
 		raise FileNotFoundError('Invalid directory of pickled files')
 	if(not os.path.exists(args.read_path)):
 		raise FileNotFoundError('Invalid path for reader.py')
-        align_study(args)
+    align_study(args)
 
 if __name__ == '__main__':
 	main()
