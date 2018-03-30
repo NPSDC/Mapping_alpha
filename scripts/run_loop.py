@@ -3,22 +3,30 @@ import os
 import subprocess
 import time
 from joblib import Parallel, delayed
+import csv
+import pickle
 
-def run_proc(line, args):
+def run_proc(line, args, req_fields):
 			study_acc = line.strip()
 			study_path=os.path.join(args.acc_dir,study_acc)
 			if(os.path.exists(study_path)):
-				subprocess.call(['python',  args.align_py, '--study_acc', study_path, '--ind_files', args.ind_files,
-				'--Pi', args.pi_dir, '--reader_path', args.read_path], stderr = open('er_cum', 'a'))
+				with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
+				    writer = csv.DictWriter(csvfile, fieldnames=req_fields)
+				    writer.writeheader()
+				#subprocess.call(['python',  args.align_py, '--study_acc', study_path, '--ind_files', args.ind_files,
+				#'--Pi', args.pi_dir, '--reader_path', args.read_path], stderr = open('er_cum', 'a'))
 			else:
 				print(study_path + " not found")
 
 def set_loop(args):
     os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'
     os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
+    gen_fam_array = pickle.load(open(args.pi_dir+"/gen_array.pickle", 'rb'))
+    families = gen_fam_array.keys()
+    req_fields = ['Accession Id', 'Met Criteria'] + families + ['Total Counts']
     start = time.time()
     with open(args.inp_file, 'r') as f:
-                Parallel(n_jobs=10)(delayed(run_proc)(line=line, args=args) for line in f.readlines())
+                Parallel(n_jobs=10)(delayed(run_proc)(line=line, args=args, req_fields=req_fields) for line in f.readlines())
     print time.time() - start
 
 def main():
@@ -37,8 +45,8 @@ def main():
 		raise FileNotFoundError('Invalid align_py')	
 	if(not os.path.exists(args.acc_dir)):
 		raise FileNotFoundError('Invalid directory of study acc')
-	if(not os.path.exists(args.ind_files)):
-		raise FileNotFoundError('Invalid directory of index files')
+	#if(not os.path.exists(args.ind_files)):
+	#	raise FileNotFoundError('Invalid directory of index files')
 	if(not os.path.exists(args.pi_dir)):
 		raise FileNotFoundError('Invalid directory of pickled files')
 	if(not os.path.exists(args.read_path)):

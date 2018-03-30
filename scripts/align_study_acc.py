@@ -47,7 +47,7 @@ def align_run(run_sra_id, ind_dir):
 
 def align_study(args):
         print('Started on study accession ' + args.study_acc)
-        align_file = os.path.join(args.study_acc, 'alignment_new.txt')
+        align_file = os.path.join(args.study_acc, 'alignment.csv')
         not_downloaded=[]
         with open(os.path.join(args.study_acc, 'files.txt'), 'r') as f_study:
                 for l in f_study.readlines():
