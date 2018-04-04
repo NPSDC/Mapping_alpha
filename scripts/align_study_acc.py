@@ -1,7 +1,7 @@
 import os
 import argparse as ag
 import subprocess
-
+import ast
 ####pythonic implementation of align_study_accession.sh
 
 def align_run(run_sra_id, ind_dir, paired):
@@ -27,14 +27,14 @@ def align_run(run_sra_id, ind_dir, paired):
                     if(not os.path.exists(run_sra_id+'_pass.fastq')):
                         err = 3
                         return(err)
-                    err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
+                    err = subprocess.call(['bowtie2', '-p', '13', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
                   stdout = s)
 
                 else:
                     if not (os.path.exists(run_sra_id+'_pass_1.fastq') and os.path.exists(run_sra_id+'_pass_2.fastq')) :
                         err = 3
                         return(err)
-                    err = subprocess.call(['bowtie2', '-p', '18', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
+                    err = subprocess.call(['bowtie2', '-p', '13', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
                  run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
                 f.close()
                 s.close()
@@ -86,15 +86,17 @@ def align_study(args):
 #                                f_write.write(sra_id + "\t" +  err.readlines()[0])
                     else:
                         f=open('er_'+sra_id,'w')
-                        read_align = subprocess.call(['python', args.read_path, '--file', sra_id+'.sam', '--p_alr_align', args.pi_dir+"/gen_array.pickle", "--p_valid_chrom", args.pi_dir+"/valid_chroms.pickle", "--dest_file", align_file], stderr = f)
+                        read_align = subprocess.call(['python', args.read_path, '--file', sra_id+'.sam', '--p_alr_align', os.path.join(args.pi_dir+"ga_fam_dict.pickle"), "--p_valid_chrom", os.path.join(args.pi_dir+"valid_chroms.pickle"), "--dest_file", align_file], stderr = f)
                         f.close()
                         if(read_align != 0):
                             with open(align_file, 'a') as f_write:
                                 with open('er_'+sra_id, 'r') as er:
                                     f_write.write(sra_id + "\t" +  er.readlines()[0])
                             print('\t\t' + sra_id + ' ##### Unsuccessful in reader\n')
-                        #subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
-                        subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
+                        if(not args.paired):
+                            subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
+                        else:
+                            subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
                             
                     subprocess.call(['rm','er_'+sra_id])
         if(not_downloaded):
@@ -110,7 +112,7 @@ def main():
 	parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
 	parser.add_argument('--Pi', metavar = 'pi', required = True, dest = 'pi_dir', help = 'Directory containing pickled files')
 	parser.add_argument('--reader_path', metavar = 'reader_path', required = True, dest = 'read_path', help = 'Reader.py path')
-    parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
+        parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
 	args = parser.parse_args()
 	os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'	    
 	os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
@@ -123,7 +125,8 @@ def main():
 		raise FileNotFoundError('Invalid directory of pickled files')
 	if(not os.path.exists(args.read_path)):
 		raise FileNotFoundError('Invalid path for reader.py')
-    align_study(args)
+        args.paired = ast.literal_eval(args.paired)
+        align_study(args)
 
 if __name__ == '__main__':
 	main()

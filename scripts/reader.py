@@ -2,7 +2,7 @@ import csv
 import HTSeq as HT
 import itertools
 import os
-import pickle
+import cPickle as pickle
 import re
 import argparse as ag
 import time

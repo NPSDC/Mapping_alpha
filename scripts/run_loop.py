@@ -13,15 +13,15 @@ def run_proc(line, args, req_fields):
 				with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
 				    writer = csv.DictWriter(csvfile, fieldnames=req_fields)
 				    writer.writeheader()
-				#subprocess.call(['python',  args.align_py, '--study_acc', study_path, '--ind_files', args.ind_files,
-				#'--Pi', args.pi_dir, '--reader_path', args.read_path], stderr = open('er_cum', 'a'))
+				subprocess.call(['python',  args.align_py, '--study_acc', study_path, '--ind_files', args.ind_files,
+				'--Pi', args.pi_dir, '--reader_path', args.read_path, '--paired', args.paired], stderr = open('er_cum', 'a'))
 			else:
 				print(study_path + " not found")
 
 def set_loop(args):
     os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'
     os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
-    gen_fam_array = pickle.load(open(args.pi_dir+"/gen_array.pickle", 'rb'))
+    gen_fam_array = pickle.load(open(args.pi_dir+"/ga_fam_dict.pickle", 'rb'))
     families = gen_fam_array.keys()
     req_fields = ['Accession Id', 'Met Criteria'] + families + ['Total Counts']
     start = time.time()
@@ -37,6 +37,7 @@ def main():
 	parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
 	parser.add_argument('--Pi', metavar = 'pi', required = True, dest = 'pi_dir', help = 'Directory containing pickled files')
 	parser.add_argument('--reader_path', metavar = 'reader_path', required = True, dest = 'read_path', help = 'Reader.py path')
+	parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single or paired end')
 	args = parser.parse_args()
 	
 	if(not os.path.exists(args.inp_file)):

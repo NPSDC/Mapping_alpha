@@ -19,12 +19,11 @@ def get_gen_array_bed(bed_file, ga_family):
 			start = int(start)
 			end = int(end)
 			j = j + 1
-			if(start > end):
-				print(j)
-			name = name[:-2]
-			# gi = HT.GenomicInterval(chrom, start, end)
-			# ga_family[name] = HT.GenomicArray('auto', typecode = 'b', stranded = False)
-			# ga_family[name][gi] = True
+			if(start < end):
+			    name = name[:-2]
+			    gi = HT.GenomicInterval(chrom, start, end)
+			    ga_family[name] = HT.GenomicArray('auto', typecode = 'b', stranded = False)
+			    ga_family[name][gi] = True
 	return(ga_family)
 
 def get_gen_array(inp_file, rep_families):
