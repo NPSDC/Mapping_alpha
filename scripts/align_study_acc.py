@@ -83,12 +83,9 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
                 print('\t\t' + sra_id + ' ##### Poor Reads\n')                            
 
             else:
-                read_align = 0
                 try:
                     count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms)
                 except:
-                    read_align = 1
-                if(read_align != 0):
                     with open(dest_file, 'a') as f_write:
                         write_csv = csv.writer(f_write)
                         write_csv.writerow([sra_id, 'No', 'Problem with reader.py'])
@@ -110,7 +107,7 @@ def main():
     parser = ag.ArgumentParser(description = "file parser")
     parser.add_argument('--study_acc', metavar = 'study_acc', required = True, dest = 'study_acc', help = 'Study Accession')
     parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
-    parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for alpha satellites')
+    parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for families of regions')
     parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
     parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
     args = parser.parse_args()

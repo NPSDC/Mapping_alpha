@@ -98,7 +98,7 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 def main():
 	parser = ag.ArgumentParser(description = "file parser")
 	parser.add_argument('--align_file', metavar = 'file', required = True, dest = 'align_file', help = 'input file to be aligned')
-	parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for alpha satellites')
+	parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for families of regions')
 	parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
 	parser.add_argument('--dest_file', metavar = 'file', required = True, dest = 'dest_file', help = 'File where output has to be saved')
 	parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', help = 'Maximum reads to be considered')
