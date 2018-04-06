@@ -5,6 +5,7 @@ import time
 from joblib import Parallel, delayed
 import csv
 import pickle
+from reader,align_study_acc import *
 
 def run_proc(line, args, req_fields):
 			study_acc = line.strip()

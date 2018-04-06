@@ -107,26 +107,26 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
 #        os.system('ls')
 
 def main():
-	parser = ag.ArgumentParser(description = "file parser")
-	parser.add_argument('--study_acc', metavar = 'study_acc', required = True, dest = 'study_acc', help = 'Study Accession')
-	parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
-	parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for alpha satellites')
+    parser = ag.ArgumentParser(description = "file parser")
+    parser.add_argument('--study_acc', metavar = 'study_acc', required = True, dest = 'study_acc', help = 'Study Accession')
+    parser.add_argument('--ind_files', metavar = 'ind_files', required = True, dest = 'ind_files', help = 'Index Files')
+    parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for alpha satellites')
     parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
     parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
-	args = parser.parse_args()
+    args = parser.parse_args()
 	# os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'	    
 	# os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
 	
     check_input(args.study_acc, 'Invalid directory of study acc')
-	check_input(args.ind_files, 'Invalid directory of index files')
-	check_input(args.ga_fam_pickle, 'Invalid Filename or path for genomic array family object')
+    check_input(args.ind_files, 'Invalid directory of index files')
+    check_input(args.ga_fam_pickle, 'Invalid Filename or path for genomic array family object')
     check_input(args.chrom_pickle, 'Invalid Filename or path for valid chromosomes object')
 
     ga_fam_dict = pickle.load(open(args.ga_fam_pickle, "rb"))
     valid_chroms = pickle.load(open(args.chrom_pickle, "rb"))
 
     args.paired = ast.literal_eval(args.paired)
-    align_study(args.study_acc, args.ind_files, ga_fam_dict, valid_chroms, paired)
+    align_study(args.study_acc, args.ind_files, ga_fam_dict, valid_chroms, args.paired)
 
 if __name__ == '__main__':
 	main()
