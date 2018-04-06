@@ -58,64 +58,59 @@ def get_counts(inp_file, ga_fam_dict, valid_chroms, break_count):
 				print('yes')
 				break
 		total_reads += 1
-#		if(total_reads%1e4 == 0):
-#			print("Finished counting "+ str(int(total_reads/1e4)) )
-#			print("So far " + str(float(counts)/total_reads * 100) + " Aligned")
+
 		if(total_reads == break_count):
 			break
+
 	for key in count_fams.keys():
 		count_fams[key]=count_fams[key]/float(total_reads)*100
 	print('\t\t##### '+ str(count_fams))
 	print('\t\t#####'+ str(total_reads))
 	return [count_fams, total_reads]
 		
+def check_input(file, message):
+	if(not os.path.exists(file)):
+		raise FileNotFoundError(message)
 
-def main():
-	parser = ag.ArgumentParser(description = "file parser")
-	parser.add_argument('--file', metavar = 'file', required = True, dest = 'inp_file', help = 'input file')
-	parser.add_argument('--p_alr_align', metavar = 'file', dest = 'pickle_alpha', help = 'Alignment for alpha satellites', required = True)
-	parser.add_argument('--p_valid_chrom', metavar = 'file', dest = 'pickle_chrom', help = 'All chromosomes extracted from repeat sequence file', required = True)
-	parser.add_argument('--dest_file', metavar = 'file', dest = 'dest_file', help = 'File where output has to be saved')
-	args = parser.parse_args()
+def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_count = 1e5):
+	check_input(align_file, 'Invalid Filename or path for sam/bam file')
+	check_input(dest_file, 'Invalid destination file')
+	count_reads = get_counts(align_file, ga_fam_dict, valid_chroms, break_count)
+	acc = align_file.split('.')[0].split('/')[-1]
 	
-	if(not os.path.exists(args.inp_file)):
-		raise FileNotFoundError('Invalid Filename or path for sam/bam file')
-	if(not os.path.exists(args.pickle_alpha)):
-		raise FileNotFoundError('Invalid Filename or path for aligned alpha satellite object')
-	if(not os.path.exists(args.pickle_chrom)):
-		raise FileNotFoundError('Invalid Filename or path for valid chromosomes object')
-
-	file_work = os.path.join(os.getcwd(), args.inp_file)
-	file_write = file_work.split('.')[0]+"_count.txt"
-	if(args.dest_file):
-		file_write = args.dest_file
-#	print(file_write)
-#	print(args.pickle_alpha)
-	break_count = 1e5
-	ga_fam_dict = pickle.load(open(args.pickle_alpha, "rb"))
-	valid_chroms = pickle.load(open(args.pickle_chrom, "rb"))
-	count_reads = get_counts(file_work, ga_fam_dict, valid_chroms, break_count)
-	acc = args.inp_file.split('.')[0].split('/')[-1]
-#        print(acc)
-	# vals = [acc]
-	fieldnames = []
-	with open(args.dest_file, 'r') as read_file:
+	##Extract the fieldnames from the file making sure order of writing is same
+	with open(dest_file, 'r') as read_file:
 		read_csv = csv.DictReader(read_file)
 		fieldnames = read_csv.fieldnames
-	#vals += [count_reads[0][key] for key in fieldnames]
-	# vals.append(break_count)
-	# print(vals)
+	
 	count_reads[0]['Accession Id'] = acc
 	count_reads[0]['Met Criteria'] = 'Yes'
 	count_reads[0]['Total Counts'] = count_reads[1]
 
-	with open(file_write, 'a') as csvfile:
+	with open(dest_file, 'a') as csvfile:
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 		if(count_reads[1] < break_count):
 			count_reads[0]['Met Criteria'] = 'No'
 		writer.writerow(count_reads[0])			
     	        
 	print("\t\t##### Finished counting\n")	
+
+def main():
+	parser = ag.ArgumentParser(description = "file parser")
+	parser.add_argument('--align_file', metavar = 'file', required = True, dest = 'align_file', help = 'input file to be aligned')
+	parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for alpha satellites')
+	parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
+	parser.add_argument('--dest_file', metavar = 'file', required = True, dest = 'dest_file', help = 'File where output has to be saved')
+	parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', help = 'Maximum reads to be considered')
+	args = parser.parse_args()
+
+	check_input(args.ga_fam_pickle, 'Invalid Filename or path for genomic array family object')
+	check_input(args.chrom_pickle, 'Invalid Filename or path for valid chromosomes object')
+
+	ga_fam_dict = pickle.load(open(args.ga_fam_pickle, "rb"))
+	valid_chroms = pickle.load(open(args.chrom_pickle, "rb"))
+
+	count_and_write(args.align_file, args.dest_file, ga_fam_dict, valid_chroms)
 	
 	
 if __name__ == '__main__':
