@@ -79,23 +79,23 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 	acc = align_file.split('.')[0].split('/')[-1]
 	
 	##Extract the fieldnames from the file making sure order of writing is same
-        fieldnames = []
+	fieldnames = []
 	with open(dest_file, 'r') as read_file:
 		read_csv = csv.DictReader(read_file)
 		fieldnames = read_csv.fieldnames
-        print(fieldnames + " dkdjdjd")	
+	
 	count_reads[0]['Accession Id'] = acc
 	count_reads[0]['Met Criteria'] = 'Yes'
 	count_reads[0]['Total Counts'] = count_reads[1]
-
 	with open(dest_file, 'a') as csvfile:
+		print(fieldnames)
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 		if(count_reads[1] < break_count):
 			count_reads[0]['Met Criteria'] = 'No'
+		print(count_reads[0])
 		writer.writerow(count_reads[0])			
-    	        
-	print("\t\t##### Finished counting\n")	
-        return(10)
+
+	print("\t\t##### Finished counting\n")
 
 def main():
 	parser = ag.ArgumentParser(description = "file parser")
