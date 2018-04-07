@@ -64,8 +64,8 @@ def get_counts(inp_file, ga_fam_dict, valid_chroms, break_count):
 
 	for key in count_fams.keys():
 		count_fams[key]=count_fams[key]/float(total_reads)*100
-	print('\t\t##### '+ str(count_fams))
-	print('\t\t#####'+ str(total_reads))
+#	print('\t\t##### '+ str(count_fams))
+#	print('\t\t#####'+ str(total_reads))
 	return [count_fams, total_reads]
 		
 def check_input(file, message):
@@ -79,10 +79,11 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 	acc = align_file.split('.')[0].split('/')[-1]
 	
 	##Extract the fieldnames from the file making sure order of writing is same
+        fieldnames = []
 	with open(dest_file, 'r') as read_file:
 		read_csv = csv.DictReader(read_file)
 		fieldnames = read_csv.fieldnames
-	
+        print(fieldnames + " dkdjdjd")	
 	count_reads[0]['Accession Id'] = acc
 	count_reads[0]['Met Criteria'] = 'Yes'
 	count_reads[0]['Total Counts'] = count_reads[1]
@@ -94,6 +95,7 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 		writer.writerow(count_reads[0])			
     	        
 	print("\t\t##### Finished counting\n")	
+        return(10)
 
 def main():
 	parser = ag.ArgumentParser(description = "file parser")
