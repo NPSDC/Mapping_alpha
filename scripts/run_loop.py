@@ -12,14 +12,14 @@ def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, pair
 	study_acc = line.strip()
 	study_path=os.path.join(acc_dir,study_acc)
 	if(os.path.exists(study_path)):
-#		with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
-#			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
-#			writer.writeheader()
-			try:
-				align_study(study_path, ind_files, ga_fam_dict, valid_chroms, paired)
-			except:
-				with open('er_cum', 'a') as f:
-					f.write("Error in processing " + study_acc + "\n")
+		with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
+			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
+			writer.writeheader()
+		try:
+			align_study(study_path, ind_files, ga_fam_dict, valid_chroms, paired)
+		except:
+			with open('er_cum', 'a') as f:
+				f.write("Error in processing " + study_acc + "\n")
 	else:
 		print(study_path + " not found")
 

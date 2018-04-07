@@ -64,8 +64,8 @@ def get_counts(inp_file, ga_fam_dict, valid_chroms, break_count):
 
 	for key in count_fams.keys():
 		count_fams[key]=count_fams[key]/float(total_reads)*100
-#	print('\t\t##### '+ str(count_fams))
-#	print('\t\t#####'+ str(total_reads))
+	print('\t\t##### '+ str(count_fams))
+	print('\t\t#####'+ str(total_reads))
 	return [count_fams, total_reads]
 		
 def check_input(file, message):
@@ -82,17 +82,14 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 	with open(dest_file, 'r') as read_file:
 		read_csv = csv.DictReader(read_file)
 		fieldnames = read_csv.fieldnames
-            	print(fieldnames)
 	count_reads[0]['Accession Id'] = acc
 	count_reads[0]['Met Criteria'] = 'Yes'
 	count_reads[0]['Total Counts'] = count_reads[1]
 	with open(dest_file, 'a') as csvfile:
-#		print(fieldnames)
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 		if(count_reads[1] < break_count):
 			count_reads[0]['Met Criteria'] = 'No'
-#		print(count_reads[0])
-		writer.writerow(count_reads[0])			
+		writer.writerow(count_reads[0])
 
 	print("\t\t##### Finished counting\n")
 

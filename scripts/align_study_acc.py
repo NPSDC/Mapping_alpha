@@ -80,7 +80,7 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
                 with open(dest_file, 'a') as f_write:
                     write_csv = csv.writer(f_write)
                     write_csv.writerow([sra_id, 'No', 'Poor fastq reads or alternate of given paired argument'])
-                print('\t\t' + sra_id + ' ##### Poor Reads or alternate of given paired argument\n')                            
+                print('\t\t' + sra_id + ' ##### Poor Reads or alternate of given paired argument\n')
 
             else:
                 try:
