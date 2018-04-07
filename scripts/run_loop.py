@@ -12,9 +12,9 @@ def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, pair
 	study_acc = line.strip()
 	study_path=os.path.join(acc_dir,study_acc)
 	if(os.path.exists(study_path)):
-		with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
-			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
-			writer.writeheader()
+#		with open(os.path.join(study_path, 'alignment.csv'), 'w') as csvfile:
+#			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
+#			writer.writeheader()
 			try:
 				align_study(study_path, ind_files, ga_fam_dict, valid_chroms, paired)
 			except:

@@ -76,23 +76,22 @@ def count_and_write(align_file, dest_file, ga_fam_dict, valid_chroms, break_coun
 	check_input(align_file, 'Invalid Filename or path for sam/bam file')
 	check_input(dest_file, 'Invalid destination file')
 	count_reads = get_counts(align_file, ga_fam_dict, valid_chroms, break_count)
-	acc = align_file.split('.')[0].split('/')[-1]
-	
+	acc = align_file.split('/')[-1].split('.')[0]
 	##Extract the fieldnames from the file making sure order of writing is same
 	fieldnames = []
 	with open(dest_file, 'r') as read_file:
 		read_csv = csv.DictReader(read_file)
 		fieldnames = read_csv.fieldnames
-	
+            	print(fieldnames)
 	count_reads[0]['Accession Id'] = acc
 	count_reads[0]['Met Criteria'] = 'Yes'
 	count_reads[0]['Total Counts'] = count_reads[1]
 	with open(dest_file, 'a') as csvfile:
-		print(fieldnames)
+#		print(fieldnames)
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 		if(count_reads[1] < break_count):
 			count_reads[0]['Met Criteria'] = 'No'
-		print(count_reads[0])
+#		print(count_reads[0])
 		writer.writerow(count_reads[0])			
 
 	print("\t\t##### Finished counting\n")

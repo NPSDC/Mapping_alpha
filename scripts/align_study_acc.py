@@ -79,13 +79,12 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
             elif(err_flag == 3):
                 with open(dest_file, 'a') as f_write:
                     write_csv = csv.writer(f_write)
-                    write_csv.writerow([sra_id, 'No', 'Poor fastq reads'])
-                print('\t\t' + sra_id + ' ##### Poor Reads\n')                            
+                    write_csv.writerow([sra_id, 'No', 'Poor fastq reads or alternate of given paired argument'])
+                print('\t\t' + sra_id + ' ##### Poor Reads or alternate of given paired argument\n')                            
 
             else:
                 try:
                     count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms)
-                    print('YO')
                 except:
                     with open(dest_file, 'a') as f_write:
                         write_csv = csv.writer(f_write)
