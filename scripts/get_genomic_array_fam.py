@@ -45,19 +45,22 @@ def get_gen_array(inp_file, rep_families):
 				gi = HT.GenomicInterval(chrom, int(row[6]), int(row[7]), row[9])
 				ga_families[rep_family][gi] = True
 
-	pickle.dump(ga_families, open(os.path.join(os.getcwd(),'ga_fam_dict.pickle'), "wb"))
 	pickle.dump(valid_chroms, open(os.path.join(os.getcwd(), 'valid_chroms.pickle'), "wb"))
-
+        return(ga_families)
 
 def main():
 	parser = ag.ArgumentParser(description = "file parser")
 	parser.add_argument('--file', metavar = 'file', required = True, dest = 'inp_file', help = 'input file') #input file containing repeat regions and their coordinates
+	parser.add_argument('--bed_file', metavar = 'bed_file', required = True, dest = 'bed_file', help = 'bed file') #input file containing repeat regions and their coordinates
 	args = parser.parse_args()
 	rep_families = ['centr', 'telo', 'acro', 'tRNA', 'rRNA', 'scRNA', 'snRNA', 'srpRNA', 'Helitron', 'Gypsy', 'PiggyBac', 'LTR', 
 		'Merlin', 'hAT', 'Low_complexity', 'L2', 'Simple_repeat', 'L1', 'Alu', 'MIR'] 
 	if(not os.path.exists(args.inp_file)):
 		raise FileNotFoundError('Invalid Filename or path for sam/bam file')
-	get_gen_array(args.inp_file, rep_families)
+	ga_families = get_gen_array(args.inp_file, rep_families)
+        ga_families = get_gen_array_bed(args.bed_file, ga_families)
+	pickle.dump(ga_families, open(os.path.join(os.getcwd(),'ga_fam_dict.pickle'), "wb"))
+        
 
 if __name__ == '__main__':
 	main()

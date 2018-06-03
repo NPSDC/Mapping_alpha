@@ -5,9 +5,9 @@ import ast
 from reader import *
 ####pythonic implementation of align_study_accession.sh
 
-def align_run(run_sra_id, ind_dir, paired):
+def align_run(run_sra_id, ind_dir, paired, break_count):
     f=open('er_'+run_sra_id,'w')
-    err = subprocess.call(['fastq-dump', '--skip-technical',  '--readids', '--read-filter', 'pass', '--dumpbase', '--split-3', '-N', '10000', '-X', '200000', '--clip', run_sra_id], stderr = f )
+    err = subprocess.call(['fastq-dump', '--skip-technical',  '--readids', '--read-filter', 'pass', '--dumpbase', '--split-3', '-N', '10000', '-X', str(int(break_count*2)), '--clip', run_sra_id], stderr = f )
     f.close()
 #        err_bow = 0
     if(err != 0):
@@ -48,7 +48,7 @@ def align_run(run_sra_id, ind_dir, paired):
         
     return(err)        
 
-def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
+def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired, break_count = 1e5):
     print('Started on study accession ' + study_acc)
     dest_file = os.path.join(study_acc, 'alignment.csv')
     not_downloaded=[]
@@ -56,7 +56,7 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
         for l in f_study.readlines():
             sra_id = l.strip()
             print('\t\t##### ' + sra_id) 
-            err_flag = align_run(sra_id, ind_files, paired)
+            err_flag = align_run(sra_id, ind_files, paired, break_count)
             if(err_flag == 1):
                 with open(dest_file, 'a') as f_write:
                     with open('er_'+sra_id, 'r') as er:
@@ -84,7 +84,7 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired):
 
             else:
                 try:
-                    count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms)
+                    count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms, break_count)
                 except:
                     with open(dest_file, 'a') as f_write:
                         write_csv = csv.writer(f_write)
@@ -110,6 +110,7 @@ def main():
     parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for families of regions')
     parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
     parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single-end or paired end reads')
+    parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', default = 1e5, type = float, help = 'Maximum reads to be considered')
     args = parser.parse_args()
 	# os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'	    
 	# os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
@@ -123,7 +124,7 @@ def main():
     valid_chroms = pickle.load(open(args.chrom_pickle, "rb"))
 
     args.paired = ast.literal_eval(args.paired)
-    align_study(args.study_acc, args.ind_files, ga_fam_dict, valid_chroms, args.paired)
+    align_study(args.study_acc, args.ind_files, ga_fam_dict, valid_chroms, args.paired, args.break_count)
 
 if __name__ == '__main__':
 	main()

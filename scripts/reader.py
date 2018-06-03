@@ -64,8 +64,8 @@ def get_counts(inp_file, ga_fam_dict, valid_chroms, break_count):
 
 	for key in count_fams.keys():
 		count_fams[key]=count_fams[key]/float(total_reads)*100
-	print('\t\t##### '+ str(count_fams))
-	print('\t\t#####'+ str(total_reads))
+#	print('\t\t##### '+ str(count_fams))
+#	print('\t\t#####'+ str(total_reads))
 	return [count_fams, total_reads]
 		
 def check_input(file, message):
@@ -99,7 +99,7 @@ def main():
 	parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for families of regions')
 	parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
 	parser.add_argument('--dest_file', metavar = 'file', required = True, dest = 'dest_file', help = 'File where output has to be saved')
-	parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', help = 'Maximum reads to be considered')
+	parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', default = 1e5, type = float, help = 'Maximum reads to be considered')
 	args = parser.parse_args()
 
 	check_input(args.ga_fam_pickle, 'Invalid Filename or path for genomic array family object')

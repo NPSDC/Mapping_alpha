@@ -8,7 +8,7 @@ import pickle
 from align_study_acc import *
 from reader import *
 
-def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired, req_fields):
+def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired, break_count, req_fields):
 	study_acc = line.strip()
 	study_path=os.path.join(acc_dir,study_acc)
 	if(os.path.exists(study_path)):
@@ -16,19 +16,19 @@ def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, pair
 			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
 			writer.writeheader()
 		try:
-			align_study(study_path, ind_files, ga_fam_dict, valid_chroms, paired)
+			align_study(study_path, ind_files, ga_fam_dict, valid_chroms, paired, break_count)
 		except:
 			with open('er_cum', 'a') as f:
 				f.write("Error in processing " + study_acc + "\n")
 	else:
 		print(study_path + " not found")
 
-def set_loop(inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired):
+def set_loop(inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired, break_count = 1e5):
     families = ga_fam_dict.keys()
     req_fields = ['Accession Id', 'Met Criteria'] + families + ['Total Counts']
     start = time.time()
     with open(inp_file, 'r') as f:
-                Parallel(n_jobs=10)(delayed(run_proc)(line=line, inp_file = inp_file, acc_dir = acc_dir, ind_files = ind_files, ga_fam_dict = ga_fam_dict, valid_chroms = valid_chroms, paired = paired, req_fields=req_fields) for line in f.readlines())
+                Parallel(n_jobs=12)(delayed(run_proc)(line=line, inp_file = inp_file, acc_dir = acc_dir, ind_files = ind_files, ga_fam_dict = ga_fam_dict, valid_chroms = valid_chroms, paired = paired, break_count = break_count, req_fields=req_fields) for line in f.readlines())
     print time.time() - start
 
 def main():
@@ -39,6 +39,7 @@ def main():
     parser.add_argument('--p_fam_align', metavar = 'file', required = True, dest = 'ga_fam_pickle', help = 'Alignment for families of regions')
     parser.add_argument('--p_valid_chrom', metavar = 'file', required = True, dest = 'chrom_pickle', help = 'All chromosomes extracted from repeat sequence file')
     parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single or paired end')
+    parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', default = 1e5, type = float, help = 'Maximum reads to be considered')
     args = parser.parse_args()
 	
     check_input(args.inp_file, 'Invalid filename')	
@@ -51,7 +52,7 @@ def main():
     valid_chroms = pickle.load(open(args.chrom_pickle, "rb"))
     
     args.paired = ast.literal_eval(args.paired)
-    set_loop(args.inp_file, args.acc_dir, args.ind_files, ga_fam_dict, valid_chroms, args.paired)
+    set_loop(args.inp_file, args.acc_dir, args.ind_files, ga_fam_dict, valid_chroms, args.paired, args.break_count)
 
 if __name__ == '__main__':
 	main()
