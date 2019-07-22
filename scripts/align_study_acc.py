@@ -23,11 +23,11 @@ def align_run(run_sra_id, ind_dir, paired, break_count):
 
     else:
         f=open('er_'+run_sra_id,'w')
-        s=open(run_sra_id+'.sam', 'w')
         if(not paired):
             if(not os.path.exists(run_sra_id+'_pass.fastq')):
                 err = 3
                 return(err)
+            s=open(run_sra_id+'.sam', 'w')
             err = subprocess.call(['bowtie2', '-p', '13', '-x', os.path.join(ind_dir, 'GRCh38'), '-U', run_sra_id+'_pass.fastq'], stderr = f,
           stdout = s)
 
@@ -35,6 +35,7 @@ def align_run(run_sra_id, ind_dir, paired, break_count):
             if not (os.path.exists(run_sra_id+'_pass_1.fastq') and os.path.exists(run_sra_id+'_pass_2.fastq')) :
                 err = 3
                 return(err)
+            s=open(run_sra_id+'.sam', 'w')
             err = subprocess.call(['bowtie2', '-p', '13', '-x', os.path.join(ind_dir, 'GRCh38'), '-1', run_sra_id+'_pass_1.fastq', '-2',
          run_sra_id+'_pass_2.fastq'], stderr = f, stdout = s)
         f.close()

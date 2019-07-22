@@ -28,7 +28,7 @@ def set_loop(inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired, br
     req_fields = ['Accession Id', 'Met Criteria'] + families + ['Total Counts']
     start = time.time()
     with open(inp_file, 'r') as f:
-                Parallel(n_jobs=12)(delayed(run_proc)(line=line, inp_file = inp_file, acc_dir = acc_dir, ind_files = ind_files, ga_fam_dict = ga_fam_dict, valid_chroms = valid_chroms, paired = paired, break_count = break_count, req_fields=req_fields) for line in f.readlines())
+                Parallel(n_jobs=10)(delayed(run_proc)(line=line, inp_file = inp_file, acc_dir = acc_dir, ind_files = ind_files, ga_fam_dict = ga_fam_dict, valid_chroms = valid_chroms, paired = paired, break_count = break_count, req_fields=req_fields) for line in f.readlines())
     print time.time() - start
 
 def main():
