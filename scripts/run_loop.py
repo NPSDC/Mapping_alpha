@@ -41,6 +41,9 @@ def main():
     parser.add_argument('--paired', metavar = 'paired', required = True, dest = 'paired', help = 'single or paired end')
     parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', default = 1e5, type = float, help = 'Maximum reads to be considered')
     args = parser.parse_args()
+
+    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'        
+    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
 	
     check_input(args.inp_file, 'Invalid filename')	
     check_input(args.acc_dir, 'Invalid directory of study acc')
@@ -52,6 +55,7 @@ def main():
     valid_chroms = pickle.load(open(args.chrom_pickle, "rb"))
     
     args.paired = ast.literal_eval(args.paired)
+
     set_loop(args.inp_file, args.acc_dir, args.ind_files, ga_fam_dict, valid_chroms, args.paired, args.break_count)
 
 if __name__ == '__main__':
