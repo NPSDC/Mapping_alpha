@@ -42,8 +42,8 @@ def main():
     parser.add_argument('--break_count', metavar = 'count', dest = 'break_count', default = 1e5, type = float, help = 'Maximum reads to be considered')
     args = parser.parse_args()
 
-    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'        
-    os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
+    #os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/sratoolkit.2.8.2-1-ubuntu64/bin'        
+    #os.environ['PATH'] += ':/mnt/Data/Anders_group/Noor/bowtie2-2.3.2'
 	
     check_input(args.inp_file, 'Invalid filename')	
     check_input(args.acc_dir, 'Invalid directory of study acc')
