@@ -11,7 +11,7 @@ from reader import *
 def run_proc(line, inp_file, acc_dir, ind_files, ga_fam_dict, valid_chroms, paired, break_count, req_fields):
 	study_acc = line.strip()
 	study_path=os.path.join(acc_dir,study_acc)
-	if(os.path.exists(study_path)):
+	if(os.path.exists(study_path) and os.path.exists(os.path.join(study_path, 'not_downloaded.txt'))):
 		with open(os.path.join(study_path, 'alignment_not_down_init.csv'), 'w') as csvfile:
 			writer = csv.DictWriter(csvfile, fieldnames=req_fields)
 			writer.writeheader()

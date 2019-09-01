@@ -53,56 +53,56 @@ def align_study(study_acc, ind_files, ga_fam_dict, valid_chroms, paired, break_c
     print('Started on study accession ' + study_acc)
     dest_file = os.path.join(study_acc, 'alignment_not_down_init.csv')
     not_downloaded=[]
-    if(os.path.exists(os.path.join(study_acc, 'not_downloaded.txt'))):
-        with open(os.path.join(study_acc, 'not_downloaded.txt'), 'r') as f_study:
-            for l in f_study.readlines():
-                sra_id = l.strip()
-                print('\t\t##### ' + sra_id) 
-                err_flag = align_run(sra_id, ind_files, paired, break_count)
-                if(err_flag == 1):
-                    with open(dest_file, 'a') as f_write:
-                        with open('er_'+sra_id, 'r') as er:
-                            m=er.readlines()
-                            if(len(m)==0):
-                                m=''
-                            else:
-                                m=m[0]
-                            write_csv = csv.writer(f_write)
-                            write_csv.writerow([sra_id, 'No', m + "fastq couldn't be downloaded properly"])
-                    print('\t\t' + sra_id + ' ##### Unsuccessful fastq\n')
-                    not_downloaded.append(sra_id)                            
 
-                elif(err_flag == 2):
-                    with open(dest_file, 'a') as f_write:
-                        with open('er_'+sra_id, 'r') as er:
-                            write_csv = csv.writer(f_write)
-                            write_csv.writerow([sra_id, 'No', er.readlines()[0]])
-                    print('\t\t' + sra_id + ' ##### Unsuccessful in bowtie\n')
-                elif(err_flag == 3):
+    with open(os.path.join(study_acc, 'not_downloaded.txt'), 'r') as f_study:
+        for l in f_study.readlines():
+            sra_id = l.strip()
+            print('\t\t##### ' + sra_id) 
+            err_flag = align_run(sra_id, ind_files, paired, break_count)
+            if(err_flag == 1):
+                with open(dest_file, 'a') as f_write:
+                    with open('er_'+sra_id, 'r') as er:
+                        m=er.readlines()
+                        if(len(m)==0):
+                            m=''
+                        else:
+                            m=m[0]
+                        write_csv = csv.writer(f_write)
+                        write_csv.writerow([sra_id, 'No', m + "fastq couldn't be downloaded properly"])
+                print('\t\t' + sra_id + ' ##### Unsuccessful fastq\n')
+                not_downloaded.append(sra_id)                            
+
+            elif(err_flag == 2):
+                with open(dest_file, 'a') as f_write:
+                    with open('er_'+sra_id, 'r') as er:
+                        write_csv = csv.writer(f_write)
+                        write_csv.writerow([sra_id, 'No', er.readlines()[0]])
+                print('\t\t' + sra_id + ' ##### Unsuccessful in bowtie\n')
+            elif(err_flag == 3):
+                with open(dest_file, 'a') as f_write:
+                    write_csv = csv.writer(f_write)
+                    write_csv.writerow([sra_id, 'No', 'Poor fastq reads or alternate of given paired argument'])
+                print('\t\t' + sra_id + ' ##### Poor Reads or alternate of given paired argument\n')
+
+            else:
+                try:
+                    count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms, break_count)
+                except:
                     with open(dest_file, 'a') as f_write:
                         write_csv = csv.writer(f_write)
-                        write_csv.writerow([sra_id, 'No', 'Poor fastq reads or alternate of given paired argument'])
-                    print('\t\t' + sra_id + ' ##### Poor Reads or alternate of given paired argument\n')
-
+                        write_csv.writerow([sra_id, 'No', 'Problem with reader.py'])
+                    print('\t\t' + sra_id + ' ##### Unsuccessful in reader\n')
+                if(not paired):
+                    subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
                 else:
-                    try:
-                        count_and_write(sra_id+'.sam', dest_file, ga_fam_dict, valid_chroms, break_count)
-                    except:
-                        with open(dest_file, 'a') as f_write:
-                            write_csv = csv.writer(f_write)
-                            write_csv.writerow([sra_id, 'No', 'Problem with reader.py'])
-                        print('\t\t' + sra_id + ' ##### Unsuccessful in reader\n')
-                    if(not paired):
-                        subprocess.call(['rm', sra_id+'_pass.fastq', sra_id+'.sam'])
-                    else:
-                        subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
-                        
-                subprocess.call(['rm','er_'+sra_id])
-        if(not_downloaded):
-            not_down_file = os.path.join(study_acc, 'not_downloaded.txt')
-            with open(not_down_file, 'w') as f_not_down:
-                for sra in not_downloaded:
-                    f_not_down.write("%s\n" % sra)
+                    subprocess.call(['rm', sra_id+'_pass_1.fastq', sra_id+'_pass_2.fastq', sra_id+'.sam'])
+                    
+            subprocess.call(['rm','er_'+sra_id])
+    if(not_downloaded):
+        not_down_file = os.path.join(study_acc, 'not_downloaded.txt')
+        with open(not_down_file, 'w') as f_not_down:
+            for sra in not_downloaded:
+                f_not_down.write("%s\n" % sra)
 #        os.system('ls')
 
 def main():
