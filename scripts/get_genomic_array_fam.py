@@ -2,6 +2,7 @@ import csv
 import HTSeq as HT
 import itertools
 import os
+import sys
 import pickle
 import re
 import argparse as ag
@@ -90,10 +91,14 @@ def get_gen_array(inp_file, pos_list, stranded = False, writePath = None, write 
 				gi = HT.GenomicInterval(chrom, int(row[pos_list[1]]), int(row[pos_list[2]]), int(row[pos_list[4]]))
 			ga_families[rep_family][gi] = True
 
-	if(writePath is None):
-		writePath = os.getcwd()
 	if(write):
-		pickle.dump(ga_families, open(os.path.join(writePath, "ga_families"), "wb"))
+		if(writePath is None):
+			writePath = os.getcwd()
+		else:
+			if not os.path.isdir(writePath):
+				sys.exit("Invalid directory")
+
+		pickle.dump(ga_families, open(os.path.join(writePath, "ga_families.pickle"), "wb"))
 		pickle.dump(valid_chroms, open(os.path.join(writePath, "valid_chroms.pickle"), "wb"))
 	return(ga_families)
 
@@ -120,11 +125,12 @@ def main():
 	parser.add_argument('-r', type = int, required = True, dest = 'repeat', help = 'replication family index')
 	parser.add_argument('-s', type = checkbool, required = True, dest = 'stranded', help = 'Stranded')
 	parser.add_argument('-v', type = int, dest = 'strand_pos', help = 'type of strand', default = 4)
+	parser.add_argument('-d', type = str, dest = 'directory', help = 'type of strand', default = None)
 	args = parser.parse_args()
 	pos = [args.chrom_pos - 1, args.start_pos - 1, args.end_pos - 1, args.repeat - 1]
 	if(args.stranded):
 		pos.append(args.strand_pos)
-	ga_families = get_gen_array(args.bed_file, pos, args.stranded)
+	ga_families = get_gen_array(args.bed_file, pos, args.stranded, args.directory)
 	#	parser.add_argument('--file', metavar = 'file', required = True, dest = 'inp_file', help = 'input file') #input file containing repeat regions and their coordinates
 	# rep_families = ['centr', 'telo', 'acro', 'tRNA', 'rRNA', 'scRNA', 'snRNA', 'srpRNA', 'Helitron', 'Gypsy', 'PiggyBac', 'LTR', 
 	# 	'Merlin', 'hAT', 'Low_complexity', 'L2', 'Simple_repeat', 'L1', 'Alu', 'MIR'] 
